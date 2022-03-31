@@ -1,0 +1,309 @@
+body{	  	
+  	font-family: Arial;
+  	font-size: 17px;
+
+    background: #131313;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(19, 19, 19);
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+
+}
+img{	
+	max-width: 100%;
+}
+.quitar-float{
+	float: none;
+} 
+.center {
+  margin: auto;
+  /*border: none;*/
+  /*border: 3px solid green;*/
+  /*padding: 10px;*/
+}  /*width: 50%;*/
+
+.center-text {
+  margin: auto;
+  width: 100%;
+  border: none;
+  /*border: 3px solid green;*/
+  padding: 50px;
+}
+.espacio-arriba-pequeno{
+	margin-top:60px;
+}
+.espacio-arriba-diminuto{
+	margin-top:30px;
+}
+.espacio-arriba{
+	margin-top:100px;
+}
+.fuente-opensans{
+
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.fuente-lato{
+	font-family: 'Kaushan Script', cursive;
+	font-family: 'Lato', sans-serif;
+	font-family: 'Zilla Slab', serif;
+}
+.fuente-tam{
+	font-size: 3.5em;
+}
+.color-titulo{
+	color: #113A8C;
+}
+.margen-derecha{
+	margin-right: 2em;
+}
+.espacio-izquierda{
+	margin-left: 2em;
+}
+.fondo-gris{
+	background-color: #eee;
+}
+.fondo-azuloscuro{
+	background-color: #031326;
+	position: absolute;
+	position: relative;
+}
+.no-lista{
+	margin:	0px;
+	padding: 0px;
+}
+.no-lista li{
+	list-style-type: none;
+}
+.padding-largo{
+	padding: 6px 4px;	
+}
+.inline-block{
+	float:none;
+	display: inline-block;
+	margin-right: -4px;
+}
+.color-azul{
+	color: #368ABF;
+}
+}
+.alinear-vertical-arriba{
+	vertical-align: top;
+}
+.alinear-vertical-abajo{
+	vertical-align: bottom;
+}
+.fuente-tam-mediano{
+	font-size: 1em;
+}
+a{
+
+}
+.color-blanco{
+	color: #FFFF;
+}
+#a-inferiores{
+	color: #919394;	
+	padding: 5px 60px;
+
+}
+
+#div-portada{	
+	/*background-image: url(https://i.pinimg.com/originals/55/01/60/5501609ee45d514d1f2c4a63502045e2.gif);*/
+	background-image: url(https://i.pinimg.com/originals/c9/4c/e7/c94ce78d80c07480d25f7acafddc15d8.gif);
+	/*https://orig00.deviantart.net/4213/f/2017/291/f/7/1k_subs_by_kirokaze-dbqyp52.gif*/
+	/*background-image: url(http://localhost/5ge/imgs/In.gif);*/
+	/*background-image: url(https://media.giphy.com/media/i4jKn7itdV2Tvjzj6Y/giphy.gif);/*
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */		
+	width: 100%;
+	height: 560px;		
+	box-shadow: 0px 0px 30px -5px;
+
+}
+.color-gris{
+	color: #919394;
+}
+#home-fs{	
+  width: 80%;
+  border: none;
+  /*border: 3px solid green;*/
+  padding: 0px;		
+}
+.padding-slogan{	
+	padding-left: 70px;
+}
+.fuente-tam-pequeno{
+	font-size: 0.7em;
+}
+.color-grisclaro{
+	color: #CBCDD0;
+}
+.fuente-tam-grande{
+	font-size: 2em;
+}
+.color-azulclaro{
+	color: #0093C6;
+}
+* {
+  box-sizing: border-box;
+}
+
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -20;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn{
+  /*background: #ffff;*/*
+  color: black;
+}
+.img-tam-marca{   	 
+  width: 50%;    
+  position: relative;
+  align-content: ;
+  /*border: 3px solid green;*/
+  padding: 1px;
+}
+.fondo-negro{
+	background-color: #0000; 
+}
+.margen-izquierda{
+	margin-left: 2em; 
+}
+.margen-pegado-derecha{
+	margin-left: 50em;
+}
+
+..padding-corto{
+	padding: 8px 6px;	
+}
+
+#img-portada{
+	position: relative;
+  	margin-top: 350px;  
+  	z-index: 1;
+}
+#boton{
+	margin: auto;	
+	position: absolute;
+ 	z-index:21;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+}
+
+
+
+/* CONTENERDOR 1*/
+main{
+	background: white;	
+	/*background: #131313;	*/
+	position: relative;	
+}
+.conten1{
+	width: 100%;			
+	height: 564px;			
+}
+
+.img-conten1{				
+	background-image: url(https://i.pinimg.com/originals/c9/4c/e7/c94ce78d80c07480d25f7acafddc15d8.gif);
+	/*https://orig00.deviantart.net/4213/f/2017/291/f/7/1k_subs_by_kirokaze-dbqyp52.gif*/
+	/*background-image: url(http://localhost/5ge/imgs/In.gif);*/
+	/*background-image: url(https://media.giphy.com/media/i4jKn7itdV2Tvjzj6Y/giphy.gif);/*
+	background-position: center; /* Center the image */				
+	background-repeat: repeat;
+	/*background-attachment: fixed;		*/
+	width: 100%;
+	height: 100%; 	
+	background-origin: padding-box;
+	box-shadow: 0px 0px 30px -5px;		
+	position: absolute;				
+}
+
+.button-buy-streaming{
+	width: 200px;
+	padding-top: 70px;			
+	padding-left: 40px;			
+	margin-left: 2px;	
+	position: absolute;
+	z-index: 20;
+	
+}
+.button-buy-streaming div{
+	width: 200px;
+	padding: 10px;		
+	border: 1px solid #0093C6;
+	border-radius: 10px;	
+	background-color: white;
+	position: absolute;	
+	
+}
+.img-conten2{		
+	width: 100%;	;
+	position: absolute;		
+	bottom: 0;	
+}
+
+.img-conten2 img{ 			
+	width: 70%;		
+	display: block;
+	margin: auto;	
+	position: relative;
+	animation-play-state: running;
+	animation-iteration-count: infinite;
+	animation-delay: 1s;
+	animation-duration: 3s;		
+	z-index: 10;			
+}
+.img-conten3{		
+	width: 100%;	
+	position: absolute;			
+}
+.img-conten3 img{ 			
+	width: 100%;		
+	height: auto;	
+	animation-play-state: running;
+	animation-iteration-count: infinite;
+	animation-delay: 2s;
+	animation-duration: 3s;		
+	z-index: 9;
+	
+}
