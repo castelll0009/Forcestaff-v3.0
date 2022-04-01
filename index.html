@@ -6,7 +6,8 @@
 		<!--css-->
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/navbar.css">
-		
+		<!--css-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Zilla+Slab:wght@500&display=swap" rel="stylesheet">
@@ -19,14 +20,16 @@
 	</head>
 	<body> 	
 		<!--navbar.css-->
-		<section class="navigation" >
-			<div class="nav-container">
-			  <div class="brand">	
-				  <div class="div-img-logo">
-					<a href="#"> <img src="imgs/logo.png" >	</a>																							
-				  </div>								
-			  </div>
-			  <nav >
+		<section class="navigation" style="position: fixed; width: 100%; height: fit-content; z-index: 1; display: flex; flex-direction: row;">
+			<div class="brand" style="display: block;">	
+				<div class="div-img-logo" style="margin-top: 5px;">
+				  <a href="#"> <img src="imgs/logo.png" ></a>																							
+				</div>								
+			</div>
+
+			<div class="nav-container" style="">
+			  
+			  <nav  style="" >
 				<div class="nav-mobile"><a id="navbar-toggle" href="#!"><span></span></a></div>
 				<ul class="nav-list">
 				  <li>
@@ -70,8 +73,14 @@
 					<a href="#!">Contact</a>
 				  </li>
 				</ul>
-			  </nav>
+			  </nav>			  
 			</div>
+			<div class="cont-right" style=" display: flex; flex-direction: row;">
+				<!--
+					<a href="#" class="btn-login" style=""><span>Log In</span></a>		
+				-->
+				<a href="#" class="btn-wallet" ><span ><img style="max-width: 30px;" src="../imgs/wallet.png"></span></a>		
+			</div>				
 		  </section>	
 		
 		  
@@ -116,5 +125,6 @@
 	</audio>
 	
 	<script src="js/index.js"></script>
+	<script src="js/navbar.js"></script>
 	</body>
 </html>
