@@ -6,6 +6,7 @@
 		<!--css-->
 		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="css/navbar.css">
+		<link rel="stylesheet" href="css/main-btn-arrow-down.css">		
 		<!--css-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		
@@ -22,14 +23,14 @@
 		<!--navbar.css-->
 		<section class="navigation" style="position: fixed; width: 100%; height: fit-content; z-index: 1; display: flex; flex-direction: row;">
 			<div class="brand" style="display: block;">	
-				<div class="div-img-logo" style="margin-top: 5px;">
+				<div class="div-img-logo" style="padding-top: 5px">
 				  <a href="#"> <img src="imgs/logo.png" ></a>																							
 				</div>								
 			</div>
 
-			<div class="nav-container" style="">
+			<div class="nav-container" >
 			  
-			  <nav  style="" >
+			  <nav   >
 				<div class="nav-mobile"><a id="navbar-toggle" href="#!"><span></span></a></div>
 				<ul class="nav-list">
 				  <li>
@@ -79,17 +80,34 @@
 				<!--
 					<a href="#" class="btn-login" style=""><span>Log In</span></a>		
 				-->
-				<a href="#" class="btn-wallet" ><span ><img style="max-width: 30px;" src="../imgs/wallet.png"></span></a>		
+				<a href="#" class="btn-wallet" ><span ><img id="id-img-wallet" src="../imgs/wallet.png"></span></a>		
+
 			</div>				
 		  </section>	
 		
 		  
-		<main>
-			<div  class="div1-main blocks" style="	background-image: url(../imgs/original.png);">
-				<div class="">						
-					<h2 class="col-md-6  fuente-lato color-blanco fuente-tam-grande fuente-zilla espacio-arriba">Descubre la tecnología, marketing y entretenimiento del futuro</h2>				
-					<h3 class="fuente-lato fuente-tam-mediano espacio-arriba-diminuto " style="color:white">Te damos soporte cuando mas lo necesites, con las mejores herramientas y servicios, somos tu fuerza de apoyo.</h3>			
-				</div>
+		<main style="text-align: center;">			 					
+
+			<div  class="div1-main "  >				
+				<div class="item1">
+					<h3>	The only question now is how far the revolution goes.</h3>
+					<picture class="" >						
+						<img src="imgs/icono-logo2.png" width="200" height="auto" style="margin-bottom:10px;" alt="Disney+ Logo">
+					</picture>
+					<div class="cont-btnbuy-opciones">						
+						<a class="btn-buy"  href="#">Get design + NFTs</a>
+						<a class="link-portada" href="#">Gallery of creations</a>
+						<span class="smallbar">|</span>
+						<a class="link-portada" href="#">Services ForceStaff</a>
+					</div>					
+				</div>	
+				<div class="item2">
+
+				</div>		
+
+				<section class="div-btn-arrow-next" id="section03" class="demo">  
+					<a href=".div2-services"><span></span></a>
+				  </section>									
 			</div>
 			
 							
@@ -113,16 +131,6 @@
 				<li class="col-md-2 inline-block "><a href="index.html"><img src="imgs/marca-blanca-fs.png" class="img-tam-marca"></a></li>				
 			</ul>
 		</footer>			 			
-
-	<audio id="myAudio2">	  
-	  <source src="shallou.mp3" type="audio/mpeg">
-	  Your browser does not support the audio element.
-	</audio>
-
-	<audio id="myAudio">	  
-	  <source src="yeah.mp3" type="audio/mpeg">
-	  Your browser does not support the audio element.
-	</audio>
 	
 	<script src="js/index.js"></script>
 	<script src="js/navbar.js"></script>

@@ -29,3 +29,18 @@
       });
     }); 
   })(jQuery); 
+
+  
+  /*cambiar la apariencia de la barra superiro al mover la rueda del mouse hacia abajo*/
+  /*
+var var_header= document.querySelector(".navigation");
+window.onscroll = function() {
+  var y = window.scrollY;
+  if(y > 32){	  	  
+	var_header.style  =   "background-color :  rgb(0, 0, 0,0.7);";
+  }else{
+	var_header.style  =   "background-color : transparent";
+  }
+    
+};
+*/

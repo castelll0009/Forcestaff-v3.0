@@ -11,7 +11,8 @@
 .div-img-logo img{
     display: block;    
     float: left;
-    max-width: 100%;
+    width: 100%;
+    max-width: 80px;
     height:auto;
 }
  .brand {
@@ -30,7 +31,7 @@
      text-transform: uppercase;
      font-size: 1.4em;
 }
-.btn-wallet{
+.btn-wallet{    
     padding-right: 10px;    
     float: right;
     right: 0;
@@ -108,10 +109,11 @@
      height: 55px;
      width: 70px;
 }
- @media only screen and (max-width: 800px) {
+ @media only screen and (max-width: 769px) {
     .navigation{
         max-height: 55px;
-    }
+        
+    }    
     .btn-login{    
      float: right;
      right: 0;
@@ -127,7 +129,8 @@
          display: block;
     }
      nav {
-         width: 100%;
+         /*width: 100%;*/
+         width: 800px;
          padding: 55px 0 15px;
     }
      nav ul {
@@ -149,7 +152,7 @@
 }
  @media screen and (min-width:800px) {
      .nav-list {
-         display: block !important;         
+         display: block !important;           
     }
 }
  #navbar-toggle {
