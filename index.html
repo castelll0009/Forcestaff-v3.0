@@ -21,69 +21,72 @@
 	</head>
 	<body> 	
 		<!--navbar.css-->
-		<section class="navigation" style="position: fixed; width: 100%; height: fit-content; z-index: 1; display: flex; flex-direction: row;">
-			<div class="brand" style="display: block;">	
-				<div class="div-img-logo" style="padding-top: 5px">
-				  <a href="#"> <img src="imgs/logo.png" ></a>																							
-				</div>								
-			</div>
-
-			<div class="nav-container" >
-			  
-			  <nav   >
-				<div class="nav-mobile"><a id="navbar-toggle" href="#!"><span></span></a></div>
-				<ul class="nav-list">
-				  <li>
-					<a href="#!">Home</a>
-				  </li>
-				  <li>
-					<a href="#!">About</a>
-				  </li>
-				  <li>
-					<a href="#!">Services</a>
-					<ul class="navbar-dropdown">
-					  <li>
-						<a href="#!">Sass</a>
-					  </li>
-					  <li>
-						<a href="#!">Less</a>
-					  </li>
-					  <li>
-						<a href="#!">Stylus</a>
-					  </li>
-					</ul>
-				  </li>
-				  <li>
-					<a href="#!">Portfolio</a>
-				  </li>
-				  <li>
-					<a href="#!">Category</a>
-					<ul class="navbar-dropdown">
-					  <li>
-						<a href="#!">Sass</a>
-					  </li>
-					  <li>
-						<a href="#!">Less</a>
-					  </li>
-					  <li>
-						<a href="#!">Stylus</a>
-					  </li>
-					</ul>
-				  </li>
-				  <li>
-					<a href="#!">Contact</a>
-				  </li>
-				</ul>
-			  </nav>			  
-			</div>
-			<div class="cont-right" style=" display: flex; flex-direction: row;">
-				<!--
-					<a href="#" class="btn-login" style=""><span>Log In</span></a>		
-				-->
+		<header>
+			<nav id="pre-stick" class="nav pre-stick">						
 				<a href="#" class="btn-wallet" ><span ><img id="id-img-wallet" src="../imgs/wallet.png"></span></a>		
+				<a href="#" class="btn-login" ><span >Log In</span></a>									
+								
+			</nav>
+			<nav id="post-stick" class="nav post-stick">
+				<a class="a-img-logo">	
+					<picture class="picture-img-logo" >
+						<img id="id-img-logo" src="imgs/logo.png">																							
+					</picture>								
+				</a>																								  								
+				<nav class="nav-container" >
+					<ul class="nav-list">				
+						<li>
+						<a href="#!">Home</a>
+						</li>
+						<li>
+						<a href="#!">About</a>
+						</li>
+						<li>
+						<a href="#!">Services</a>
+						<ul class="navbar-dropdown">
+							<li>
+							<a href="#!">Sass</a>
+							</li>
+							<li>
+							<a href="#!">Less</a>
+							</li>
+							<li>
+							<a href="#!">Stylus</a>
+							</li>
+						</ul>
+						</li>
+						<li>
+						<a href="#!">Portfolio</a>
+						</li>
+						<li>
+						<a href="#!">Category</a>
+						<ul class="navbar-dropdown">
+							<li>
+							<a href="#!">Sass</a>
+							</li>
+							<li>
+							<a href="#!">Less</a>
+							</li>
+							<li>
+							<a href="#!">Stylus</a>
+							</li>
+						</ul>
+						</li>
+						<li>
+						<a href="#!">Contact</a>
+						</li>
+					</ul>
+				</nav>
+				
+				<a href="#" class="btn-wallet" ><span ><img id="id-img-wallet" src="../imgs/wallet.png"></span></a>		
+				<a href="#" class="btn-login" ><span >Log In</span></a>		
+				<div class="nav-mobile"><a id="navbar-toggle" href="#!"><span></span></a></div>
+			</nav>	
 
-			</div>				
-		  </section>	
+					  																			
+		</header>
+
+		
 		
 		  
 		<main style="text-align: center;">			 					
@@ -106,13 +109,12 @@
 				</div>		
 
 				<section class="div-btn-arrow-next" id="section03" class="demo">  
-					<a href=".div2-services"><span></span></a>
+					<a href="#div2-services"><span></span></a>
 				  </section>									
 			</div>
 			
 							
-			<div class="div2-services blocks">
-				<p>bloque2</p>
+			<div  id="div2-services" class="div2-services blocks">				
 			</div>			
 			<div class="div3-nft blocks">
 				<p>bloque3</p>
@@ -134,5 +136,6 @@
 	
 	<script src="js/index.js"></script>
 	<script src="js/navbar.js"></script>
+	<script src="js/div-btn-arrow-down.js"></script>
 	</body>
 </html>
