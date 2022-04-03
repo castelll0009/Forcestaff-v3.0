@@ -39,18 +39,27 @@ var pre_stick= document.getElementById("pre-stick");
 var post_stick= document.getElementById("post-stick");
 window.onscroll = function() {  
   var y = window.scrollY; //console.log(window.scrollY);
-  if(y > 100){	   //700
-    console.log("superamos 64");         
-    $("#pre-stick").css("opacity", "0");
-    $("#pre-stick").css("pointer-events", "none");
-    $("#post-stick").css("opacity", "1");
-    $("#post-stick").css("pointer-events", "auto");
+  if (screen.width < 769) {
+   
   }else{
-    console.log("normal");                  
-    $("#pre-stick").css("opacity", "1");
-    $("#pre-stick").css("pointer-events", "auto");
-    $("#post-stick").css("opacity", "0");      
-    $("#post-stick").css("pointer-events", "none");     
+    if(y > 200){	   //700
+      console.log("superamos 64");         
+      $("#pre-stick").css("opacity", "0");
+      $("#pre-stick").css("pointer-events", "none");
+      $("#post-stick").css("opacity", "1");
+      $("#post-stick").css("pointer-events", "auto");
+    }else{
+      console.log("normal");                  
+      $("#pre-stick").css("opacity", "1");
+      $("#pre-stick").css("pointer-events", "auto");
+      $("#post-stick").css("opacity", "0");      
+      $("#post-stick").css("pointer-events", "none");     
+    }
   }
+  
     
 };
+
+
+  
+
