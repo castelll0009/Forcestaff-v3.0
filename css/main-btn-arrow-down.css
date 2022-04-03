@@ -89,7 +89,7 @@
   @media only screen and (max-width: 769px)
 {
     .div-btn-arrow-next{   
-        margin-bottom: 0px;         
+        margin-bottom: 2px;         
         right: 50%;     
     }
     @-webkit-keyframes sdb03 {

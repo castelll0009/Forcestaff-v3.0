@@ -90,21 +90,19 @@ main{
 .div1-main{        
     justify-content: flex-start;
     box-sizing: border-box;
-
-    position: relative;
+    
     min-height: 100vh;
     padding: 5.6vw;
     display: flex;
     align-items: center;
-
-    position: absolute;
+    
     box-sizing: border-box;
     padding: 5.6vw;
     background-position: initial !important;
     background-size: cover;
     background-repeat: no-repeat;
     
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
