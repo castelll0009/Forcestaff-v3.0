@@ -42,8 +42,8 @@
     padding-right: 10px;        
     line-height: 0px;       
 }
-.btn-wallet img{ 
-    min-width: auto;
+.span-cont-img img{
+    max-width: 10px;
 }
 .btn-login{
     padding-left: 8px;
@@ -218,15 +218,21 @@
         line-height: 10px;            
         font-weight: 200;    
     }
-    .btn-login span{                 
-    }
+    .btn-login span
+    {                 
+
+    }   
+
     .btn-wallet{  
         display: block; 
         position: absolute; 
         right: 0;
-        top: 0;    
+        top: 0;                    
         margin: 5px;       
         margin-right: 90px !important;       
+    }
+    .span-cont-img img{
+        max-width: 10px;
     }
     .picture-img-logo{
         
