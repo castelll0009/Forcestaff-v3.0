@@ -37,28 +37,45 @@
 //var post_stick= document.querySelector("#post-stick");
 var pre_stick= document.getElementById("pre-stick");
 var post_stick= document.getElementById("post-stick");
+
+function obtenerResolucion(){
+  var widthBrowser=$(window).width(); 
+  $(window).resize(function() {
+    var heightBrowser =$(window).height();
+    widthBrowser=$(window).width();  
+    console.log(widthBrowser) ;       
+  });
+  return widthBrowser;      
+}
+
+console.log(obtenerResolucion());
+//funcion que se activa al mover el scroll
 window.onscroll = function() {  
-  var y = window.scrollY; //console.log(window.scrollY);
-  if (screen.width < 769) {
-   
+  var y = window.scrollY; //console.log(window.scrollY);    
+  if (obtenerResolucion() < 769) {
+    $("#pre-stick").css("opacity", "0");
+    $("#pre-stick").css("pointer-events", "none");
+    $("#post-stick").css("opacity", "1");
+    $("#post-stick").css("pointer-events", "auto");
   }else{
-    if(y > 200){	   //700
-      console.log("superamos 64");         
+    //estamos en pc
+    if(y > 32){	   //700    
+      //desplazo
       $("#pre-stick").css("opacity", "0");
       $("#pre-stick").css("pointer-events", "none");
       $("#post-stick").css("opacity", "1");
       $("#post-stick").css("pointer-events", "auto");
     }else{
-      console.log("normal");                  
+      //normal
+      console.log("normal");             
       $("#pre-stick").css("opacity", "1");
       $("#pre-stick").css("pointer-events", "auto");
       $("#post-stick").css("opacity", "0");      
       $("#post-stick").css("pointer-events", "none");     
     }
-  }
-  
-    
+  }                                                
 };
+
 
 
   

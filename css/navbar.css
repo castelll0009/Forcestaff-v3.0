@@ -197,19 +197,16 @@
         display: inline-block;
         padding-top: 3px;
         
-   }  
-   
-   .pre-stick{     
-   
-    opacity: 0;
-    pointer-events: none;
+   }   
+    .pre-stick{        
+        opacity: 0;        
+        pointer-events: none;
     }
-    .post-stick{  
-
-    background-color: #040714;    
-    opacity: 1;    
-    pointer-events: auto;     
-      max-height: 45px;
+    .post-stick{               
+        opacity: 1;  
+        background-color: #0407149b;      
+        pointer-events: auto;
+        max-height: 45px;
     }
     .btn-login{  
         position: absolute;         
