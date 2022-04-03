@@ -110,8 +110,7 @@ main{
     right: 0;
     bottom: 0;
     background-repeat: no-repeat;
-    z-index: 0;
-    pointer-events: none;    
+    z-index: 0;        
     background-image: url(../imgs/portada.png);     
         
 }
