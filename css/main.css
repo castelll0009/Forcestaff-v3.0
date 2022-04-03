@@ -27,9 +27,8 @@ body{
     -webkit-font-smoothing: antialiased;
 
 }
-header{   
-    display: block;    
-    z-index: 10;
+header{      
+    
  }
 main{    
     display: block;
