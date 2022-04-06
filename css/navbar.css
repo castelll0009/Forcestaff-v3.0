@@ -34,7 +34,7 @@
 .post-stick{  
     transition: opacity .8s ease-out;         
     z-index: 4;
-    background: linear-gradient(#1fddff61, #04081429, #04071400);
+    background: linear-gradient(#1fddff61, #0408140a, #04071400);
     justify-content: flex-end;    
     opacity: 0;    
     pointer-events: none;
@@ -171,12 +171,12 @@
      line-height: 20px;
 }
  .navbar-dropdown {
-     position: absolute;
-     display: none;
-     z-index: 1;
-     background: rgba(13, 13, 13, 0.452);
-     backdrop-filter:blur(1px) ;
-     box-shadow: 0 0 35px 0 rgba(0,0,0,0.25);
+    position: absolute;
+    display: none;
+    z-index: 1;
+    background: rgba(13, 13, 13, 0.234);
+    backdrop-filter:blur(2px) ;
+    box-shadow: 0 0 35px 0 rgba(0,0,0,0.25);
 }
 /*/////////////////////////////////////////////////*/
 /*Mobil movil*/
@@ -200,16 +200,17 @@
     }
     .nav {              
         display: inline-block;
-        padding-top: 3px;
+        padding-top: 3px;        
         
    }   
     .pre-stick{        
         opacity: 0;        
         pointer-events: none;
     }
-    .post-stick{               
+    .post-stick{      
+        transition: all 600ms ease-in-out;
         opacity: 1;  
-        background-color: #0407149b;      
+        background-color: #04071400;      
         pointer-events: auto;
         max-height: 45px;
     }
@@ -272,11 +273,15 @@
         margin-top: -10px;
     }
     .nav-container{
-        display: block;
+        position: absolute;
+        top: 41px;
+        left: 2%;
+        display: inline-block;
         width: 100%;
         margin: 0;
         padding: 0;
-        margin-top: -2px !important;
+        margin-top: 4px !important;
+        margin-left: -10px !important;
     }
     .nav-container a{
         margin: 0;        
@@ -288,8 +293,7 @@
      .nav-container ul li {
          float: none;
     }
-     .nav-container ul li a {                  
-         margin-left: -21px;
+     .nav-container ul li a {                         
          padding: 15px;
          line-height: 20px;
          background: #262626a2;
