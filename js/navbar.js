@@ -50,6 +50,8 @@ function obtenerResolucion(){
 }
 
 console.log(obtenerResolucion());
+//funcion que se activa al mover el mouse
+
 //funcion que se activa al mover el scroll
 window.onscroll = function() {  
   var y = window.scrollY; //console.log(window.scrollY);    
@@ -58,7 +60,7 @@ window.onscroll = function() {
     $("#pre-stick").css("opacity", "0");
     $("#pre-stick").css("pointer-events", "none");
     $("#post-stick").css("opacity", "1");
-    $("#post-stick").css("pointer-events", "auto");
+    $("#post-stick").css("pointer-events", "auto");    
     if(y > 32){	   //700    
       //desplazo      
       $("#post-stick").css("background-color", "#0407149b");      
@@ -71,6 +73,8 @@ window.onscroll = function() {
     //estamos en PC
     if(y > 32){	   //700    
       //desplazo
+      //desaparece pre-stick, solo botones login wallet,  
+      //aparece post-stick con descanecido y backfrop filter
       $("#pre-stick").css("opacity", "0");
       $("#pre-stick").css("pointer-events", "none");
       $("#post-stick").css("opacity", "1");
@@ -78,7 +82,7 @@ window.onscroll = function() {
       $("#post-stick").css("background-color", " rgb(4 8 20 / 85%)");      
       $("#post-stick").css("backdrop-filter", "blur(2px)");            
     }else{
-      //normal
+      //normal top 
       console.log("normal");      
       navBarApareceMovimientoMouse();     
       $("#pre-stick").css("opacity", "1");

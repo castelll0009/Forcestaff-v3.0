@@ -1,10 +1,19 @@
 
+ var resolucionMobil = 769;
+ if(obtenerResolucion() > resolucionMobil){
+    navBarApareceMovimientoMouse();
+ }
  
+ 
+
 function navBarApareceMovimientoMouse(){
     var timeout;
     post_stick = document.getElementsByClassName("post-stick");
     document.onmousemove = function(){
+        //alert("moviendo");
         clearTimeout(timeout);
+        //aparece post-stick menus
+        //desaparece pre-stick solo botones login y wallet
         $("#post-stick").css("opacity", "1");
         $("#post-stick").css("pointer-events", "auto");  
         $("#pre-stick").css("opacity", "0");
