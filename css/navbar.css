@@ -31,8 +31,7 @@
     opacity: 1;
     pointer-events: auto;
 }
-.post-stick{ 
-    /*comi to prub*/ 
+.post-stick{     
     transition: opacity .8s ease-out;         
     z-index: 4;
     background: linear-gradient(#1fddff61, #0408140a, #04071400);
