@@ -34,7 +34,7 @@
 .post-stick{  
     transition: opacity .8s ease-out;         
     z-index: 4;
-    background: linear-gradient(#1fddff61, #0000001a, transparent);
+    background: linear-gradient(#1fddff61, #04081429, #04071400);
     justify-content: flex-end;    
     opacity: 0;    
     pointer-events: none;
