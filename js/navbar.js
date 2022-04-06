@@ -53,6 +53,7 @@ console.log(obtenerResolucion());
 window.onscroll = function() {  
   var y = window.scrollY; //console.log(window.scrollY);    
   if (obtenerResolucion() < 769) {
+    //estamos resolucion movil    
     $("#pre-stick").css("opacity", "0");
     $("#pre-stick").css("pointer-events", "none");
     $("#post-stick").css("opacity", "1");
@@ -67,11 +68,12 @@ window.onscroll = function() {
       $("#post-stick").css("pointer-events", "auto");
     }else{
       //normal
-      console.log("normal");             
+      console.log("normal");      
+      navBarApareceMovimientoMouse();     
       $("#pre-stick").css("opacity", "1");
       $("#pre-stick").css("pointer-events", "auto");
       $("#post-stick").css("opacity", "0");      
-      $("#post-stick").css("pointer-events", "none");     
+      $("#post-stick").css("pointer-events", "none");  
     }
   }                                                
 };

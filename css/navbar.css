@@ -31,9 +31,10 @@
     opacity: 1;
     pointer-events: auto;
 }
-.post-stick{           
+.post-stick{  
+    transition: opacity .8s ease-out;         
     z-index: 4;
-    background-color: #040714;
+    background: linear-gradient(#1fddff61, #0000001a, transparent);
     justify-content: flex-end;    
     opacity: 0;    
     pointer-events: none;
@@ -98,9 +99,9 @@
     width: 200px;
 }
 .picture-img-logo img{        
-    width: 100px;
+    width: 110px;
     height: auto;  
-    display: block;
+    display: inline-block;
 }
 
 /*menu m*/
@@ -149,9 +150,11 @@
      background: transparent;
      color: #FFF;
 }
- .nav-container ul li a:hover, .nav-container ul li a:visited:hover {
-     background: #0A7BCD;
-     color: #ffffff;
+ .nav-container ul li a:hover, .nav-container ul li a:visited:hover {    
+    color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 0 9px #22e1ff;
+    background: #1fddff;
 }
  .navbar-dropdown li a{
      background: #2581DC;
@@ -187,9 +190,11 @@
     height: 55px;   
     width: 70px;
 }
- @media only screen and (max-width: 769px) { 
+
+@media only screen and (max-width: 769px) { 
+   
     .nav .a-img-logo{        
-        
+        padding: 0;       
     }
     .contenedor{       
     }
@@ -256,9 +261,9 @@
         
     }
     .picture-img-logo img{          
-        width: 60px;
-        height: auto;  
-        display: block;
+        width: 70px;
+        margin: 0px !important;
+        height: auto;      
     }
     
      .nav-mobile {
@@ -320,23 +325,23 @@
      display: block;
      content: '';
      transition: all 10ms ease-in-out;
-}
- #navbar-toggle span:before {
-     top: -10px;
-}
- #navbar-toggle span:after {
-     bottom: -10px;
-}
- #navbar-toggle.active span {
-     background-color: transparent;
-}
- #navbar-toggle.active span:before, #navbar-toggle.active span:after {
-     top: 0;
-}
- #navbar-toggle.active span:before {
-     transform: rotate(45deg);
-}
- #navbar-toggle.active span:after {
-     transform: rotate(-45deg);
-}
+    }
+    #navbar-toggle span:before {
+        top: -10px;
+    }
+    #navbar-toggle span:after {
+        bottom: -10px;
+    }
+    #navbar-toggle.active span {
+        background-color: transparent;
+    }
+    #navbar-toggle.active span:before, #navbar-toggle.active span:after {
+        top: 0;
+    }
+    #navbar-toggle.active span:before {
+        transform: rotate(45deg);
+    }
+    #navbar-toggle.active span:after {
+        transform: rotate(-45deg);
+    }
 }
