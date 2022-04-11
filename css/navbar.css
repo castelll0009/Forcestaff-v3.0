@@ -38,6 +38,10 @@
     justify-content: flex-end;    
     opacity: 0;    
     pointer-events: none;
+    /*
+    opacity: 1;    
+    pointer-events: auto;
+    */
 }
 .btn-wallet{    
     padding-right: 10px;        

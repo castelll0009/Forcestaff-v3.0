@@ -30,7 +30,6 @@
       });
     }); 
   })(jQuery); 
-
   
   /*cambiar la apariencia de la barra superiro al mover la rueda del mouse hacia abajo*/
 
