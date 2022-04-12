@@ -4,9 +4,14 @@
     flex-direction: row;
     min-height: 100vh;
     background-color: rgb(19, 19, 19);
-    background:rgb(19, 19, 19);  
-    padding: 5.6vw !important;
+    background:rgb(19, 19, 19);    
     align-items: center;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;    
+    position: relative;
+    padding: 5.6vw !important;
 }
 .cont-img-section{
     padding: 5px;
@@ -19,8 +24,16 @@
     max-width: 100%;
     
 }
-.cont-statement{            
+.text-container{            
     color: silver;
     display: inline-block;
     padding: 100px;
+}
+
+/*Resolution Mobil*/
+@media only screen and (max-width: 769px) { 
+    .blocks{
+        padding: 10vw 5vw;
+        flex-direction: column;
+    }
 }
