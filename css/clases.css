@@ -5,4 +5,18 @@
     opacity: 0;
     pointer-events: none;
   }
-  
+.sidealign{
+  align-items: center;
+  display: flex !important;
+}
+
+  .sidealing-image{
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+.display-block-width {
+    display: block;
+    height: auto;
+    width: 100%;
+}
