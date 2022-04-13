@@ -33,6 +33,9 @@
 
 /*Resolution Mobil*/
 @media only screen and (max-width: 769px) { 
+    .picture-img-section{
+      max-width: 100% !important;              
+    }
     .blocks{        
         flex-direction: column;                
         padding: 10vw 5vw;  
