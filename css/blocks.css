@@ -29,6 +29,9 @@
     color: silver;
     display: inline-block;    
 }
+.text-container a{
+    margin-top: 15px;
+}
 
 
 /*Resolution Mobil*/
