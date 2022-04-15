@@ -34,8 +34,6 @@
 .text-container a{
     margin-top: 15px;
 }
-
-
 /*Resolution Mobil*/
 @media only screen and (max-width: 769px) { 
     .picture-img-section{

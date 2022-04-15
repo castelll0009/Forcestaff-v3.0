@@ -84,3 +84,14 @@
   text-decoration: none;
   color:rgb(4, 4, 4);
 }
+
+/*Ajuste de elemntos CARDS
+organizar elementos*/
+.grid-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 -12px;
+  padding-left: 0;
+}
+
