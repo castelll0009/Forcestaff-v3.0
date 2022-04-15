@@ -9,7 +9,7 @@ html{
 }
 body{	  	
   	font-family: Arial;
-  	font-size: 17px;
+  	font-size: 20px;
     background: #131313;
     background-image: initial;
     background-position-x: initial;
@@ -157,8 +157,8 @@ p{
 @media only screen and (max-width: 769px)
 {
     body{
-        font-size: 18px;
-    line-height: 28px;
+        font-size: 16px;
+        line-height: 28px;
     }
     h3{
     font-size: 16px;    

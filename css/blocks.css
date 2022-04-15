@@ -28,6 +28,8 @@
 .text-container{            
     color: silver;
     display: inline-block;    
+    padding: 0 2vw;
+    box-sizing: border-box;
 }
 .text-container a{
     margin-top: 15px;
