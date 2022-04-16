@@ -87,12 +87,19 @@
 
 /*Ajuste de elemntos CARDS
 organizar elementos*/
-.grid-list {
-  flex-direction: row;  
+.grid-list {  
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;  
+  /*flex-wrap: wrap;*/
   justify-content: space-around;
   margin: 0 -12px;
   padding-left: 0;
+}
+
+/*Resolution Mobil*/
+@media only screen and (max-width: 769px) { 
+  .grid-list {    
+    flex-wrap: wrap;   
+  }
 }
 
