@@ -12,5 +12,9 @@
     height: auto;
 }
 h4{
+    margin-top: 10px;
     color: #131313;
+}
+.p-services{
+    margin-bottom: 10px;
 }
