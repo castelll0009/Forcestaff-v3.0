@@ -124,7 +124,7 @@ organizar elementos*/
 .grid-list {  
   display: flex;
   flex-direction: row;  
-  /*flex-wrap: wrap;*/
+  flex-wrap: wrap;
   justify-content: space-around;
   margin: 0 -12px;
   padding-left: 0;
