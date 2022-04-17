@@ -80,10 +80,44 @@
   width: 30%;
 }
 .btn-secondary:hover{  
-  background: linear-gradient(to right,#05aed8 40%, #00CCFF 60%, silver 90%);
+  background: linear-gradient(to top, #00CCFF 10%, rgb(250, 248, 248) 90%);
   text-decoration: none;
   color:rgb(4, 4, 4);
 }
+.btn-blue-purple{
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .2s ease 0s;
+  font-size: 12px;
+  line-height: 15px;    
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: #134580;
+  padding: 11.5px 24px;
+  max-width: 540px;    
+  color: #f9f9f9;    
+  border: none;    
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration: none;
+  width: 30%;
+}
+.btn-blue-purple:hover{  
+  background: linear-gradient(to right,#00CCFF 40%, #6E4D95 80%, #AF5CC9 100%);
+  text-decoration: none;
+  color:rgb(67, 67, 67);
+}
+
+
+
 
 /*Ajuste de elemntos CARDS
 organizar elementos*/
