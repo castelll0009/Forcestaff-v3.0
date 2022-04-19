@@ -116,16 +116,24 @@
   color:rgb(67, 67, 67);
 }
 
-
+.center{
+justify-content: center;
+}
 
 
 /*Ajuste de elemntos CARDS
 organizar elementos*/
 .grid-list {  
   display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 -12px;
+    padding-left: 0;
+}
+.grid-list-no-space {  
+  display: flex;
   flex-direction: row;  
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-wrap: wrap;  
   margin: 0 -12px;
   padding-left: 0;
 }
@@ -133,7 +141,8 @@ organizar elementos*/
 /*Resolution Mobil*/
 @media only screen and (max-width: 769px) { 
   .grid-list {    
-    flex-wrap: wrap;   
+    flex-wrap: wrap; 
+    
   }
 }
 
