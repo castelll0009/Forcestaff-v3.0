@@ -13,6 +13,120 @@
     min-width: auto;  
     height: fit-content;
 }
+/*footer  cards*/
+.footer-cards{
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    /*-webkit-justify-content: space-between;*/
+    justify-content: space-between;
+    height: 45px;
+    line-height: 45px;
+}
+
+.read-more-card{           
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: nowrap;
+    position: absolute;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    top: -20px;
+    right: 0;
+    left: auto;
+    height: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #1fd2f1;
+    background-color: #10131d;
+    font-size: 10px;
+    flex-direction: column-reverse;
+    align-content: space-around;
+
+}
+.info-card{    
+    /*
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #a0a0a0;
+    */
+
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-flex: 2 1;
+    flex: 2 1;
+    padding-left: 15px;
+    color: #1fd2f1;
+    font-size: 11px;
+    background-color: #10131d;
+    border-bottom-left-radius: 4px;
+}
+.hire-card{    
+    /*
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #2098e9;
+    */
+    border-bottom-right-radius: 4px;
+    position: relative;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    background-color: #1fd2f1;
+    color: #0e1018;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+}
+.hire-card:hover{  
+    background: linear-gradient(to right,#00CCFF 40%, #6E4D95 80%, #AF5CC9 100%);
+    text-decoration: none;
+    color:rgb(31, 31, 31);
+  }
+
+.test-card{
+    background-color: #191e2e !important;
+    color: white;
+    
+}
+.test-card{
+    background-color: #ffffff !important;
+    color: rgb(15, 15, 15);
+    
+}
+.hire-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    border-top: 45px solid #10131d;
+    border-right: 10px solid #1fd2f1;
+}
+.icon{
+    padding: 5px;
+}
 
 .list-services li{
     margin: 20px;
@@ -50,7 +164,9 @@ h4{
     margin: 10px;       
     font-size: 15px;
     line-height: 25px;
+    color: rgb(87, 87, 87);
 }
+
 @media only screen and (max-width: 769px) { 
     .card{        
         max-width: 50%;          
