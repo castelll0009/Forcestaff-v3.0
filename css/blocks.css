@@ -4,8 +4,7 @@
     display: flex !important;
 
     position: relative;        
-    /*min-height: 100vh;*/    
-    background: rgb(4 8 20);
+    /*min-height: 100vh;*/        
     min-height: auto;
     background-position: 50%;
     background-repeat: no-repeat;
