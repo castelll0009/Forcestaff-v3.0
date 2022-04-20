@@ -118,6 +118,10 @@
     background-color: #191e2e !important;
     color: white !important;    
 }
+.test-card p{
+    
+    color: silver !important;    
+}
 /*
 .test-card{
     background-color: #ffffff !important;
