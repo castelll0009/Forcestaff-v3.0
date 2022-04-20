@@ -138,6 +138,11 @@ organizar elementos*/
   padding-left: 0;
 }
 
+.footnote {
+  font-size: 11px;
+  line-height: 21px;
+}
+
 /*Resolution Mobil*/
 @media only screen and (max-width: 769px) { 
   .grid-list {    
