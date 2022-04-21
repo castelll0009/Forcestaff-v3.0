@@ -93,14 +93,14 @@ h3{
     font-size: 16px;
     line-height: 26px;
     list-style: none;
-    text-decoration:  underline;    
+    text-decoration:  none;    
 }
 .link-portada:hover{ 
     color: white;    
 } 
 
     
-@media only screen and (max-width: 769px)
+@media only screen and (max-width: 1200px)
 {
     .item1{
         min-width: auto;
