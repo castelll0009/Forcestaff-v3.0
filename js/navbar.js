@@ -54,7 +54,7 @@ console.log(obtenerResolucion());
 //funcion que se activa al mover el scroll
 window.onscroll = function() {  
   var y = window.scrollY; //console.log(window.scrollY);    
-  if (obtenerResolucion() < 769) {
+  if (obtenerResolucion() < 1200) {
     //estamos resolucion movil    
     $("#pre-stick").css("opacity", "0");
     $("#pre-stick").css("pointer-events", "none");

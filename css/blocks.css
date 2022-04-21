@@ -35,13 +35,13 @@
 }
 
 /*Resolucion intermedia tango de resolucion*/
-@media only screen and (min-width: 769px) and (max-width: 1024px) {    
+@media only screen and (min-width: 1200px) and (max-width: 1250px) {    
     .blocks{
         padding: 10vw 5vw;	 
     }    
 }
 /*Resolution Mobil*/
-@media only screen and (max-width: 769px) { 
+@media only screen and (max-width: 1200px) { 
     .picture-img-section{
       max-width: 100% !important;              
     }

@@ -195,7 +195,7 @@
     width: 70px;
 }
 
-@media only screen and (max-width: 769px) { 
+@media only screen and (max-width: 1200px) { 
    
     .nav .a-img-logo{        
         padding: 0;       
@@ -204,8 +204,7 @@
     }
     .nav {              
         display: inline-block;
-        padding-top: 3px;        
-        
+        padding-top: 3px;                
    }   
     .pre-stick{        
         opacity: 0;        
@@ -309,7 +308,7 @@
      .navbar-dropdown {
          position: static;
 }
- @media screen and (min-width:769px) {
+ @media screen and (min-width:1200px) {
      .nav-list {         
          display: block !important;           
     }

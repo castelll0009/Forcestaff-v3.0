@@ -182,7 +182,7 @@ h4{
     color: rgb(87, 87, 87);
 }
 
-@media only screen and (max-width: 769px) { 
+@media only screen and (max-width: 1200px) { 
     .card{        
         max-width: 100%;               
     }
