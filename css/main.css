@@ -57,53 +57,8 @@ main{
     font-size: 10px;
     color: silver;    
 }
-.link-portada{    
-    padding: 0;
-    color: #f9f9f9;
-    cursor: pointer;
-    background: 0 0;
-    border: none;
-    text-align: inherit;
-    font-size: 10px;
-    line-height: 24px;
-    list-style: none;
-    text-decoration:  underline;    
-}
-.link-portada:hover{ 
-    color: white;    
-} 
 
-.btn-buy{
-    margin-bottom: 8px;
-    cursor: pointer;
-    border-radius: 4px;
-    box-sizing: border-box;
-    vertical-align: middle;
-    text-align: center;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    transition: all .2s ease 0s;
-    font-size: 12px;
-    line-height: 15px;    
-    font-weight: 400;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    background: #134580;
-    padding: 11.5px 24px;
-    max-width: 540px;    
-    color: #f9f9f9;    
-    border: none;    
-    cursor: pointer;
-    text-decoration: underline;
-    text-decoration: none;
-    width: 100%;
-}
-.btn-buy:hover{
-    background: linear-gradient(to right,#00CCFF 40%, #6E4D95 60%, #AF5CC9 90%);
-    text-decoration: none;
-    color:rgb(4, 4, 4);
-}
+
 .div1-main{     
     justify-content: flex-start;
     box-sizing: border-box;
@@ -136,35 +91,9 @@ h2{
     color: #f9f9f9;
 }
 
-h3{    
-    display: block;
-    font-size: 1.17em;
-    margin: 0;
-    margin-bottom: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    color: #f9f9f9;    
-}
 
 
-.div1-main{
-	/*background-image: url(../imgs/original.png);*/
-	background-repeat: no-repeat;
-	background-size: cover;			
-	background-position: center;						
-}
-.item1{
-    text-align: center;
-    min-width: 350px;
-    max-width: 350px;
-    word-wrap: break-word;
-    }
 
-.item2{    
-    min-width: 400px;
-    max-width: 100%;
-    }   
 /*MOBIL RESOLUTION*/
 @media only screen and (max-width: 769px)
 {

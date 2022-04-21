@@ -1,0 +1,118 @@
+.cont-btnbuy-opciones{
+  
+}
+.div1-main{
+	/*background-image: url(../imgs/original.png);*/
+	background-repeat: no-repeat;
+	background-size: cover;			
+	background-position: center;						
+}
+h3{    
+    display: block;
+    /*font-size: 1.17em;*/
+    margin: 0;
+    margin-bottom: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: #f9f9f9;  
+    font-size: 28px;
+    line-height: 38px;  
+}
+.item1{
+    text-align: center;
+    min-width: 350px;
+    max-width: 350px;
+    min-width: 40%;
+    max-width: 40%;
+    word-wrap: break-word;
+    }
+
+.item2{    
+    min-width: 400px;
+    max-width: 100%;
+    }  
+.cont-picture-portada{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: auto;
+    width: 100%;
+    
+    max-width: 60%;
+}
+.cont-picture-portada img{
+    display: block;
+    height: auto;
+    width: 100%;    
+}
+.btn-buy{
+    margin-bottom: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease 0s;
+    
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: #134580;
+    padding: 11.5px 24px;
+    /*max-width: 540px;    */
+    color: #f9f9f9;    
+    border: none;    
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration: none;
+    width: 100%;
+    height: 50px;
+    max-width: 700px;
+    padding: 20.5px 33px;
+    font-size: 12px;
+    line-height: 15px;   
+    font-size: 18px;
+    line-height: 18px;
+}
+.btn-buy:hover{
+    background: linear-gradient(to right,#00CCFF 40%, #6E4D95 60%, #AF5CC9 90%);
+    text-decoration: none;
+    color:rgb(4, 4, 4);
+}
+.link-portada{    
+    padding: 0;
+    color: #f9f9f9;
+    cursor: pointer;
+    background: 0 0;
+    border: none;
+    text-align: inherit;
+    font-size: 16px;
+    line-height: 26px;
+    list-style: none;
+    text-decoration:  underline;    
+}
+.link-portada:hover{ 
+    color: white;    
+} 
+
+    
+@media only screen and (max-width: 769px)
+{
+    .item1{
+        min-width: auto;
+        max-width: 350px;        
+    }
+
+    .item2{    
+        min-width: 500px;
+        max-width: 100%;
+    }   
+    .btn-buy{     
+        font-size: 10px;
+        margin-bottom: -2px;
+    }
+}
