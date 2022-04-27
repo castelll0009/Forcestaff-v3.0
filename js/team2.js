@@ -21,22 +21,27 @@ var swiper = new Swiper('.product-slider', {
 
             var target = $('.product-slider__item').eq(index).data('target');
 
-            console.log("target" +target);
+            console.log("target" +target);       
+            
 
             $('.product-img__item').removeClass('active');
             $('.product-img__item#'+ target).addClass('active');
+           
         }
     }
     
 
 });
 
-    swiper.on('slideChange', function () {
+    swiper.on('slideChange', function () {        
+        
         var index = this.activeIndex;
 
         var target = $('.product-slider__item').eq(index).data('target');
 
-        console.log(target);
+        console.log("swiper on "+ target);
+      
+     
 
         $('.product-img__item').removeClass('active');
         $('.product-img__item#'+ target).addClass('active');
@@ -61,24 +66,32 @@ var swiper = new Swiper('.product-slider', {
 
 //CIRCLE PROGRESS
 //obtenemos el porcentaje escrito en la div
-var radio = $(".main-circle").attr("r"); //radio
-var circle = $('#bar');   //circle
-var pct = parseInt($(".product-inf__percent-txt").text());   //pct
+UpdatePctCircle();
+function UpdatePctCircle(){
+    var radio = $(".main-circle").attr("r"); //radio
+    var circle = $('#bar');   //circle
+    var pct = parseInt($(".product-inf__percent-txt").text());   //pct
+    
+    var stroke_dasharray =  ( 2 * (22 / 7) * radio ) ; //calculamos el dash array
+    var stroke_dashoffset = ( 1 - pct / 100 ) * (2 * (22 / 7) * radio); //calculamos el dash offset
+    //console.log("radio: "+ radio  + " porcentaje recibido : " + pct +" stok das array " + stroke_dasharray);
+    //console.log("stroke_dashoffset "+ stroke_dashoffset);
+    //circle.setAttribute("stroke-dasharray", stroke_dasharray); //insertamos el trazo en porcentaje
+    
+    //reiniciamos a cero 
+    circle.attr("stroke_dasharray", stroke_dasharray );
+    circle.attr("stroke_dashoffset", stroke_dasharray );
 
-var stroke_dasharray =  ( 2 * (22 / 7) * radio ) ; //calculamos el dash array
-var stroke_dashoffset = ( 1 - pct / 100 ) * (2 * (22 / 7) * radio); //calculamos el dash offset
-console.log("radio: "+ radio  + " porcentaje recibido : " + pct +" stok das array " + stroke_dasharray);
-console.log("stroke_dashoffset "+ stroke_dashoffset);
-//circle.setAttribute("stroke-dasharray", stroke_dasharray); //insertamos el trazo en porcentaje
+    circle.css({ strokeDasharray: stroke_dasharray});
+    circle.css({ strokeDashoffset: stroke_dasharray});
 
-//circle.css({ stroke_dashoffset: stroke_dashoffset});
-circle.attr("stroke_dasharray", stroke_dasharray );
-circle.attr("stroke_dashoffset", stroke_dashoffset );
-circle.css({ strokeDasharray: stroke_dasharray});
-circle.css({ strokeDashoffset: stroke_dashoffset});
+    circle.css({ strokeDasharray: stroke_dasharray});
+    circle.css({ strokeDashoffset: stroke_dashoffset});
+    
+    console.log("attr array"+ circle.attr("stroke_dasharray"));
+    console.log("attr offset "+ circle.attr("stroke_dashoffset"));
+}
 
-console.log("attr array"+ circle.attr("stroke_dasharray"));
-console.log("attr offset "+ circle.attr("stroke_dashoffset"));
 //circle.setAttribute("stroke-dashoffset", stroke_dashoffset); //insertamos el trazo en porcentaje
 //procedemos a poner el valor  del 	// percent for dashoffset
 //console.log("sdsadasd"+circle.css({ strokeDashoffset: p}));
