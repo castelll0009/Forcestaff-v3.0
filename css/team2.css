@@ -28,7 +28,7 @@
   position: relative;
 }
 
-.bg-shape {
+.bg-shape {  
   height: 90%;
   background-image: linear-gradient(-45deg, #35b7e2 0%, #1887c2 100%);
   box-shadow: 0px 30px 139px 0px rgb(10 22 31 / 26%);
@@ -299,17 +299,34 @@ progress, sub, sup {
 svg:not(:root) {
   overflow: hidden;
 }
+
+
 circle {
   cx: 50;
-  cy: 50;
-  r: 47;
-  stroke-dasharray: 240, 300;
+  cy: 50;   
+  r: 47;   
+  
+  /*stroke-dasharray: 565.48;*/
+  /*stroke-dasharray:565.7142857142857;    */
+  /*stroke-dashoffset:113.14285714285711;*/
   stroke: rgb(29, 164, 237);
   stroke: rgb(44 237 247);
   stroke: rgb(255 255 255);
   stroke-width: 4;
-  fill: none;
+  transition: stroke-dasharray 1s linear ;   
+  fill: none;    
+
+/*
+  transition: stroke-dashoffset 1s linear;
+  transition-delay: 1s;
+  stroke: #666;
+   stroke: #FF9F1E;   
+  stroke-dasharray: 565.48;
+  stroke-dashoffset:508.9380098815465 ;  
+  stroke-dashoffset:25 ; 
+  */
 }
+
 
 .product-slider__item.swiper-slide-active circle {
   animation: progress 1s ease-out forwards;
