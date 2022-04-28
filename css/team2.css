@@ -10,8 +10,7 @@
   background-size: cover;
   position: relative;
   overflow: hidden;
-  display: flex;
-  
+  display: flex;  
 }
 .swiper-wrapper{
   
@@ -313,18 +312,14 @@ circle {
   stroke: rgb(44 237 247);
   stroke: rgb(255 255 255);
   stroke-width: 4;
-  transition: stroke-dasharray 1s linear ;   
+ /* transition: stroke-dasharray 1s linear ;   */
   fill: none;    
 
-/*
-  transition: stroke-dashoffset 1s linear;
-  transition-delay: 1s;
-  stroke: #666;
-   stroke: #FF9F1E;   
-  stroke-dasharray: 565.48;
-  stroke-dashoffset:508.9380098815465 ;  
-  stroke-dashoffset:25 ; 
-  */
+
+  transition: stroke-dashoffset .5s linear;  
+  /*transition-delay: .3s;*/
+ 
+  
 }
 
 
@@ -340,8 +335,8 @@ circle {
 /*Show and hidden circle porgress bar class active*/
 .product-inf__percent-circle-circle.active-circle-progress{
   stroke-dasharray:224;
-  stroke-dashoffset:565.7142857142857;
-
+  stroke-dashoffset:224;
+  /*stroke-dashoffset:565.7142857142857;*/
 }
 
 .product-inf__percent-txt {
