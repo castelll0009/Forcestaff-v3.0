@@ -1,6 +1,6 @@
 var swiper = new Swiper('.product-slider', {
     spaceBetween: 30,
-    effect: 'fade',
+    effect: 'coverflow',
         //initialSlide: 3,
     loop: false,
     navigation: {
@@ -15,36 +15,47 @@ var swiper = new Swiper('.product-slider', {
     //     // invert: false
     // },
     
-    on: {
-        init: function(){
+    on: { // IMAGEN: cambio de card y cambio de tarjet en la imagen , plus opacidad and animacion de la picture
+        init: function(){        
             var index = this.activeIndex;
+            console.log("index "+ index);
 
-            var target = $('.product-slider__item').eq(index).data('target');
+            //guardamos en tarjet el item que queremos cambiarr 
+            var target = $('.product-slider__item').eq(index).data('target'); //eq indica el indice actual de una lista de elementos , 
 
-            console.log("target" +target);       
-            
+            console.log("target1 " + target);                   
 
             $('.product-img__item').removeClass('active');
-            $('.product-img__item#'+ target).addClass('active');
-           
+            $('.product-img__item#'+ target).addClass('active');           
         }
     }
-    
 
 });
 
-    swiper.on('slideChange', function () {        
-        
-        var index = this.activeIndex;
-
+    swiper.on('slideChange', function () {           //IMG: change to img when swiper is on     and  changing 
+        var index = this.activeIndex; // indicate witch card is currently selected
+        console.log("swiper index: " + index); 
         var target = $('.product-slider__item').eq(index).data('target');
+        var target_circle_progress = $(".product-inf__percent-circle-circle").eq(index);
+        //console.log("circle progress: "+target_circle_progress.attr("cy"));
+        
+        console.log("swiper on: "+ target);        
+           
+        //show and  hiden img the corresponding image
+        $('.product-img__item').removeClass('active');   //remueve la clase activa a todas las clases
+        $('.product-img__item#'+ target).addClass('active'); //crea una clase con el id correspondiente y le activa la clase para mostrar la imagen WOW!
 
-        console.log("swiper on "+ target);
-      
-     
-
-        $('.product-img__item').removeClass('active');
-        $('.product-img__item#'+ target).addClass('active');
+        //add clas to active and hidden the circle progress bar
+        target_circle_progress.removeClass("active-circle-progress");
+        target_circle_progress.addClass("active-circle-progress");
+        /*
+        $('.product-inf__percent-circle-circle').removeClass('active-circle-progress');  
+        target_circle_progress.eq(index).addClass("active-circle-progress");
+        $("#parrafo").css("color", "#000000");
+        /*
+        $('.product-inf__percent-circle-circle').removeClass('active-circle-progress');  
+        $('.product-inf__percent-circle-circle#'+ target).addClass('active-circle-progress');   //crea una clase con el id correspondiente y le activa la clase para mostrar la imagen WOW!
+        */
 
         if(swiper.isEnd) {
             $('.prev').removeClass('disabled');
@@ -66,7 +77,7 @@ var swiper = new Swiper('.product-slider', {
 
 //CIRCLE PROGRESS
 //obtenemos el porcentaje escrito en la div
-UpdatePctCircle();
+
 function UpdatePctCircle(){
     var radio = $(".main-circle").attr("r"); //radio
     var circle = $('#bar');   //circle
@@ -74,14 +85,11 @@ function UpdatePctCircle(){
     
     var stroke_dasharray =  ( 2 * (22 / 7) * radio ) ; //calculamos el dash array
     var stroke_dashoffset = ( 1 - pct / 100 ) * (2 * (22 / 7) * radio); //calculamos el dash offset
-    //console.log("radio: "+ radio  + " porcentaje recibido : " + pct +" stok das array " + stroke_dasharray);
-    //console.log("stroke_dashoffset "+ stroke_dashoffset);
+    console.log("radio: "+ radio  + " porcentaje recibido : " + pct +" stok das array " + stroke_dasharray);
+    console.log("stroke_dashoffset "+ stroke_dashoffset);
     //circle.setAttribute("stroke-dasharray", stroke_dasharray); //insertamos el trazo en porcentaje
     
     //reiniciamos a cero 
-    circle.attr("stroke_dasharray", stroke_dasharray );
-    circle.attr("stroke_dashoffset", stroke_dasharray );
-
     circle.css({ strokeDasharray: stroke_dasharray});
     circle.css({ strokeDashoffset: stroke_dasharray});
 

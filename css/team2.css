@@ -337,6 +337,12 @@ circle {
   transform: rotate(180deg) scaleY(-1);
   transform-origin: 50%;
 }
+/*Show and hidden circle porgress bar class active*/
+.product-inf__percent-circle-circle.active-circle-progress{
+  stroke-dasharray:224;
+  stroke-dashoffset:565.7142857142857;
+
+}
 
 .product-inf__percent-txt {
   position: absolute;
