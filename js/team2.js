@@ -53,7 +53,7 @@ var swiper = new Swiper('.product-slider', {
         var target = $('.product-slider__item').eq(index).data('target');  
         $('.swiper-pagination-bullet').eq(index).trigger('click'); //redirecciona haciendo click en el swiper-paginattion correspondiente POOM
 
-        if(index == 6){
+        if(index == 5){
             playVid();
         }
         

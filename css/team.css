@@ -1,5 +1,6 @@
 .swiper-container-photos {    
   width: 100%;
+  overflow: hidden;
 }
 
 .swiper-slide {
