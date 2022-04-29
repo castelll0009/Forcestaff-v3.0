@@ -52,7 +52,11 @@ var swiper = new Swiper('.product-slider', {
         console.log("swiper index: " + index); 
         var target = $('.product-slider__item').eq(index).data('target');  
         $('.swiper-pagination-bullet').eq(index).trigger('click'); //redirecciona haciendo click en el swiper-paginattion correspondiente POOM
-        playVid();
+
+        if(index == 6){
+            playVid();
+        }
+        
         console.log("swiper on: "+ target);        
            
         //show and  hiden img the corresponding image
@@ -103,7 +107,6 @@ function setupCircleProgress(index){
 }
 //VIDEO
 var vid = document.querySelector(".product-video__item");
-
    
 function playVid() {
     vid.play();
