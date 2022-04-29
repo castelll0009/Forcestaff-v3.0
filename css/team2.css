@@ -67,6 +67,7 @@
   max-height: 500px;
   height: 100%;
   pointer-events: none;
+  
 }
 .product-img__item {
   display: flex;
@@ -84,6 +85,11 @@
   object-fit: contain;
   object-position: center right;
   max-width: 100%;
+
+  object-fit: contain;
+    object-position: center right;
+
+    
 }
 .product-img__item.active {
   opacity: 1;
@@ -191,16 +197,7 @@
   transform: translateY(55px);
   transition: all 0.5s;
 }
-.product-labels__title {
-  text-transform: uppercase;
-  font-family: "Dosis", sans-serif;
-  font-weight: 700;
-  letter-spacing: 3px;
-  font-size: 16px;
-  font-size: 12px !important;
-  line-height: 1.2;
-  margin-bottom: 10px;
-}
+
 .product-labels__group {
   text-transform: uppercase;
   display: flex;
@@ -212,6 +209,15 @@
   letter-spacing: 3px;
   font-size: 16px;
   margin-bottom: 10px;
+
+  text-transform: uppercase;
+  font-family: "Dosis", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 16px;
+  font-size: 12px !important;
+  line-height: 1.2;
+  margin-bottom: 0;
 }
 .product-labels__item:first-child {
   margin-left: 0;
@@ -277,6 +283,10 @@ progress, sub, sup {
   opacity: 0;
   transform: translateY(55px);
   transition: all 0.5s;  
+  left: 0;
+  right: 0;
+  margin: 0px 10px 0px 10px;
+  text-align: center;
 }
 
 .product-ctr .hr-vertical {
@@ -382,6 +392,10 @@ circle {
   margin-right: 40px;
   cursor: pointer;
   outline: none !important;
+  left: 0;
+    right: 0;
+    margin: 0px 50px 0px 50px;
+    text-align: center;
 }
 
 .product-slider__cart:hover {
@@ -520,7 +534,7 @@ button, hr, input {
   height: 100%;
   display: flex;
   align-items: center;
-  width: 85%;
+  width: 100%;
   transition: all 0.5s;
   overflow: hidden;
   position: relative;
@@ -549,3 +563,336 @@ button, hr, input {
   margin-top: -20px;
   z-index: 1;
 }
+/*///////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////*/
+
+
+
+@media only screen and (max-width: 1200px)
+{
+  .content {
+    max-width: 920px;
+    margin-top: 100px;
+    height: auto;
+    min-height: 78vh;
+  }
+
+
+
+  .bg-shape {
+    border-radius: 20px;
+    width: 100%;
+    height: 40%;
+    align-items: flex-start;
+    padding-top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    align-items: center;
+    height: 290px;
+    width: 90%;
+    height: 290px;
+    /* align-items: flex-start; */
+    /* padding: 50px; */
+    left: 50%;
+    transform: translateX(-50%);
+    
+  }
+  .bg-shape img {
+    transform: none;
+    width: 100%;
+    position: relative;
+    left: auto;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain;
+    height: 100%;
+    object-position: top;
+    
+  }
+
+
+  .bg-shape img {
+    width: 430px;
+    left: 10px;
+  }
+  .bg-shape img {
+    object-fit: contain;
+    width: 90%;
+    display: block;
+    object-position: top;
+    opacity: 0.4;
+    /* transform: rotate(-90deg) translateY(-50%); */
+    max-width: inherit;
+    left: 4%;
+    position: absolute;
+    padding: 10px;
+    padding-top: 40px;
+  }
+
+  .product-img {
+    /*
+    width: 55%;
+    left: 55%;
+    max-width: 300px;
+    transform: translateX(-50%);
+    top: 0;
+
+    position: absolute;
+    top: -24%;
+    */
+
+    width: 100%;
+    max-width: 400px;
+    top: 30px;
+    height: 390px;
+
+    width: 430px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    height: 350px;
+
+    width: 100%;
+    max-width: 400px;
+    top: 30px;
+    height: 390px;
+    width: 430px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    height: 350px;
+    width: 100%;
+    max-width: 400px;
+    top: 30px;
+    height: 390px;
+    width: 430px;    
+    transform: translateX(-50%);
+    top: 0;
+    height: 350px;
+    left: 55%;
+
+  }
+  .product-slider {
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto;
+    /* position: relative; */
+    top: 0;
+    margin-top: 170px;
+    margin-bottom: 100px;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto;
+    position: absolute;
+    top: 0;
+    margin-top: 170px;
+    margin-bottom: 100px;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* height: auto; */
+    top: 0;
+    margin-top: 170px;
+    position: relative;
+    margin-bottom: 100px;
+    width: 85%;
+    left: 50%;
+    /* top: 0; */
+    min-height: 100vw;
+    height: 100%;
+    margin-bottom: 50px;
+  }
+
+
+  .product-slider__card {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  transition: all 0.5s;
+  overflow: hidden;
+  position: relative;
+  border-radius: 30px;
+  }
+
+  .product-slider__content {    
+  text-align: center;
+  padding: 10px;
+  padding-top: 90px;
+  line-height: 0.9;
+  height: 100vw;
+  
+  }
+  .product-slider__title {
+  font-size: 16px;
+  }
+  .product-slider__price {
+  font-size: 16px;
+  }
+  .product-ctr {
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  }
+  .product-labels__group {
+  justify-content: center;
+  }
+
+  .product-ctr .hr-vertical {
+  width: 100%;
+  margin: 35px 0;
+  height: 1px;
+  }
+
+  .product-slider__item {
+  height: auto;
+  }
+  .product-slider__card {
+  border-radius: 20px;
+  }
+  .product-slider__cover {
+  border-radius: 20px;
+  }
+
+  .product-slider__title {
+  font-size: 16px;
+  }
+  .product-slider__price {
+  font-size: 16px;
+  }
+  .product-ctr {
+    display: flex;
+    min-height: 150px;
+    margin-top: 40px;
+    margin-top: 10px;
+    opacity: 0;
+    transform: translateY(55px);
+    transition: all 0.5s;
+    align-items: stretch;
+    align-content: center;
+}
+
+  .product-labels {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    min-width: 100%;
+    color: silver;
+  }
+  
+
+  .product-ctr .hr-vertical {
+    width: 100%;
+    margin: 35px 0;
+    margin: -0px -10px 0px 0px;
+    height: 1px;
+  }
+  
+  .product-inf {
+  width: 100%;
+  }
+   .product-video__item{
+    width: 200%;
+    position: relative;
+    display: block;
+    /* top: -200px; */
+    margin-left: -55%;
+    z-index: 3;
+    /* height: 150%; */
+    /* margin: auto; */
+    /* left: 55%; */
+    /* margin-left: -180px; */
+    transform: scaleX(-1);
+   }
+   .product-img__item img {
+    object-fit: contain;
+    object-position: center right;
+    max-width: 50%;
+    /* object-fit: contain; */
+    /* object-position: center right; */
+    margin: auto;
+  }
+.product-img__item {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%) translateX(-130px);
+  opacity: 0;
+  transition: all 0.3s ease 0s;
+  top: 39%;
+  
+  }
+  svg {
+    overflow: hidden;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+  }
+  .product-inf__percent-txt {
+    position: absolute;
+    top: 15px;
+    right: 3px;
+    /* transform: translate(-50%, -50%); */
+    font-size: 13px;
+  }
+  .product-labels__item{
+    margin: 0px;
+  }
+  .product-labels__txt {
+    line-height: 1;
+    display: block;
+    border: 2px solid transparent;
+    font-size: 7px;
+    padding: 10px 20px;
+    padding-left: 0;
+    border-radius: 50px;
+    transition: all 0.3s;
+    letter-spacing: 2px;
+    padding: 5px;
+    font-weight: 100;
+}
+.product-labels__checkbox:checked + .product-labels__txt {
+  border-color: #cc3743;
+  border-color: #5938eb;
+  padding: 4px 6px;
+  }
+  .product-labels__group {  
+    margin-bottom: 8px;
+  }
+  .product-labels__title {
+    font-family: "Dosis", sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: "Dosis", sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 16px;
+    font-size: 8px;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+}
+
+
