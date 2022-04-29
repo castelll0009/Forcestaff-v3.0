@@ -258,6 +258,7 @@
     }
     .span-cont-img img{
         margin-top: 1px;
+        margin-top: -2px;
         min-width: 30px;
         max-width: 33px;
     }
