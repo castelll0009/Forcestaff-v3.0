@@ -10,12 +10,14 @@
   background-size: cover;
   position: relative;
   overflow: hidden;
-  display: flex;  
+  display: flex;    
 }
 .swiper-wrapper{
   
 }
-
+.swiper-pagination{
+  bottom: 30px !important;
+}
 .content {
   height: 500px;
   min-height: 500px;
@@ -87,6 +89,12 @@
   opacity: 1;
   transform: translateY(-48%) translateX(-30px);
   transition-delay: 0.3s;
+}
+.product-video__item{
+  width: 200%;
+  height: 150%;
+  margin-left: -180px;
+  transform: scaleX(-1);
 }
 
 /*product slider*/
@@ -316,7 +324,7 @@ circle {
   fill: none;    
 
 
-  transition: stroke-dashoffset .5s linear;  
+  transition: stroke-dashoffset .7s linear;  
   /*transition-delay: .3s;*/
  
   
@@ -536,4 +544,8 @@ button, hr, input {
   z-index: 10;
 }
 
-
+.secction-cont-swiper-photos{    
+  width: 100%;
+  margin-top: -20px;
+  z-index: 1;
+}

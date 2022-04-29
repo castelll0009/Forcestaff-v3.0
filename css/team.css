@@ -1,11 +1,11 @@
-/*Swiper Slide*/
-.swiper-container {
-  padding-top: 50px;
-  padding-bottom: 50px;
+.swiper-container-photos {    
   width: 100%;
 }
 
 .swiper-slide {
+
+}
+.swiper-slide-photos-style{
   box-shadow: 5px 50px 50px 5px  black;
   border-radius: 50%;
   background-position: center;
@@ -14,16 +14,17 @@
   width: 300px;
 
   box-shadow: 5px 50px 50px 5px black;
+  /*box-shadow: 1px 1px 20px 1px #43a2c4a6;*/
   border-radius: 50%;
   background-position: center;
   background-size: cover;
-  height: 200px!important;
-  width: 200px !important;
+  height: 15% !important;
+  width: 15%  !important;
   align-items: center;
   text-align: center;
 }
 
-.swiper-slide h4{
+.swiper-slide-photos-style h4{
   text-align: center;
   position: absolute;  
   top: 0;  
@@ -34,9 +35,10 @@
   width: max-content;  
   margin: auto;
   z-index: 1;
+  display: none;
 }
 
-.swiper-slide p{
+.swiper-slide-photos-style p{
   width: max-content;
   text-align: center;
   position: absolute; 
@@ -47,6 +49,7 @@
   right: 0;
   color: silver;
   margin-bottom: 0;
+  display: none;
 }
 /*Circle shadow*/
 
@@ -79,6 +82,16 @@
   transition: all 0.5s;
   z-index: 1;
 }
+.circle-shadow.active-circle{  
+  filter: grayscale(0);  
+  box-shadow: 1px 1px 50px 1px #43a2c4f9;
+  box-shadow: 1px 1px 50px 1px  #2b96ba;
+  box-shadow: 1px 1px 100px 1px #114481;
+  box-shadow: 1px 1px 150px 1px  #2b96ba;
+   box-shadow: 1px 1px 100px 1px #114481;
+  border: 0px solid #2b96ba;
+}
+
 .circle-shadow:hover,.circle:hover {
 /*  box-shadow: none;*/
   border-radius: 200px;
@@ -87,7 +100,7 @@
   
 }
 
-.swiper-slide img{
+.swiper-slide-photos-style img{
   display: block;
   width: 100%;
 }

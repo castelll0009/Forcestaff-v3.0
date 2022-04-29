@@ -1,5 +1,10 @@
+$( document ).ready(function() {
 var swiper = new Swiper('.product-slider', {
     spaceBetween: 30,
+    grabCursor: true,    
+    centeredSlides: true,
+    paginationClickable: true,
+    slideToClickedSlide: true,
     effect: 'fade',
         //initialSlide: 3,
     loop: false,
@@ -10,6 +15,13 @@ var swiper = new Swiper('.product-slider', {
         */
         nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
+        
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: false,    
+        clickable: true,      
+            
     },
     // mousewheel: {
     //     // invert: false
@@ -19,6 +31,9 @@ var swiper = new Swiper('.product-slider', {
         init: function(){        
             var index = this.activeIndex;
             console.log("index "+ index);
+            $('.swiper-pagination-bullet').eq(index).trigger('click'); //redirecciona haciendo click en el swiper-paginattion correspondiente POOM
+            
+          
 
             //guardamos en tarjet el item que queremos cambiarr 
             var target = $('.product-slider__item').eq(index).data('target'); //eq indica el indice actual de una lista de elementos , 
@@ -35,8 +50,9 @@ var swiper = new Swiper('.product-slider', {
     swiper.on('slideChange', function () {           //IMG: change to img when swiper is on     and  changing 
         var index = this.activeIndex; // indicate witch card is currently selected
         console.log("swiper index: " + index); 
-        var target = $('.product-slider__item').eq(index).data('target');               
-        
+        var target = $('.product-slider__item').eq(index).data('target');  
+        $('.swiper-pagination-bullet').eq(index).trigger('click'); //redirecciona haciendo click en el swiper-paginattion correspondiente POOM
+        playVid();
         console.log("swiper on: "+ target);        
            
         //show and  hiden img the corresponding image
@@ -85,38 +101,14 @@ function setupCircleProgress(index){
     target_circle_progress.css({strokeDasharray: stroke_dasharray});         
     target_circle_progress.css({strokeDashoffset: stroke_dashoffset}) ;    
 }
+//VIDEO
+var vid = document.querySelector(".product-video__item");
 
-//circle.setAttribute("stroke-dashoffset", stroke_dashoffset); //insertamos el trazo en porcentaje
-//procedemos a poner el valor  del 	// percent for dashoffset
-//console.log("sdsadasd"+circle.css({ strokeDashoffset: p}));
-
-/*  
-stroke-dasharray: $circle-circumstance;
-stroke-dashoffset: ( 0.3 * $circle-circumstance);
-
-var val = parseInt($(".product-inf__percent-txt").text());  
-var circle = $('#bar');  
-console.log(progress_circle)  ;
-console.log(progress_circle)  ;
-if (isNaN(val)) {
-  //si no tiene ninguna valor el h1 por defecto0 mandamos un 100%
- val = 100; 
+   
+function playVid() {
+    vid.play();
 }
-else{
-  //calculamos el valor para llenar la barra circular
-  var r = progress_circle.attr('r');
-  console.log("r "+r);
-  var c = Math.PI*(r*2);    
- 
-  if (val < 0) { val = 0;}
-  if (val > 100) { val = 100;}
-  
-  var pct = ((100-val)/100)*c;
-  console.log("pct" + pct);   
-  pct =56.54866776461628;     
-  progress_circle.css({ strokeDashoffset: pct});
-  //cambiamos el valor de el h1 %
-  
-    $('.product-inf__percent-txt').text(val);
-}
-*/
+
+});
+
+//CHATCH SWIPER-SLIDE CLICKED
