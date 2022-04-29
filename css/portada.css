@@ -20,12 +20,24 @@ h3{
     line-height: 38px;  
 }
 .item1{
+    /*
     text-align: center;
     min-width: 350px;
     max-width: 350px;
     min-width: 40%;
     max-width: 40%;
     word-wrap: break-word;
+*/
+    border-radius: 5px;
+    text-align: center;
+    min-width: 350px;
+    max-width: 350px;
+    min-width: 40%;
+    max-width: 40%;
+    word-wrap: break-word;
+    background: #00000063;
+    background: linear-gradient(45deg, #0409158f, transparent);
+    padding: 50px;
     }
 
 .item2{    
