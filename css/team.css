@@ -1,7 +1,7 @@
-.swiper-container-photos {    
+.swiper-container-photos {
   width: 100%;
   overflow: hidden;
-  padding-bottom: 45px;
+  padding-bottom: 100px;
 }
 
 .swiper-slide {
@@ -112,5 +112,23 @@
   .swiper-slide-photos-style{
     height: 30% !important;
     width: 30%  !important;
+  }
+  .swiper-container-photos {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 45px;
+    margin-top: -86px;
+  }
+  
+  .swiper-slide-photos-style{
+    height: 25% !important;
+    width: 25%  !important;
+  }
+  .circle-shadow.active-circle{  
+    filter: grayscale(0);  
+    box-shadow: 1px 1px 50px 1px #43a2c4f9;
+    box-shadow: 1px 1px 50px 1px  #2b96ba;
+    
+    border: 0px solid #2b96ba;
   }
 }

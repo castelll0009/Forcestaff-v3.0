@@ -279,14 +279,15 @@ progress, sub, sup {
 .product-slider__bottom {
   position: absolute;
   margin-top: 5px;
-  bottom: 15px;
   opacity: 0;
   transform: translateY(55px);
-  transition: all 0.5s;  
+  transition: all 0.5s;
   left: 0;
   right: 0;
   margin: 0px 10px 0px 10px;
   text-align: center;
+  bottom: 0;
+  margin-bottom: 15px;
 }
 
 .product-ctr .hr-vertical {
@@ -357,12 +358,7 @@ circle {
   /*stroke-dashoffset:565.7142857142857;*/
 }
 
-.product-inf__percent-txt {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+
 .product-inf__title {
   font-family: "Dosis", sans-serif;
   font-weight: 700;
@@ -563,6 +559,14 @@ button, hr, input {
   margin-top: -20px;
   z-index: 1;
 }
+@media only screen and (min-width: 1200px){
+  .product-inf__percent-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
 /*///////////////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////////////////////*/
@@ -575,6 +579,7 @@ button, hr, input {
 /*///////////////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////////////////////*/
+
 
 
 
@@ -711,9 +716,8 @@ button, hr, input {
     width: 85%;
     left: 50%;
     /* top: 0; */
-    min-height: 100vw;
+    min-height: 100%;
     height: 100%;
-    margin-bottom: 50px;
   }
 
 
@@ -734,6 +738,8 @@ button, hr, input {
   padding-top: 90px;
   line-height: 0.9;
   height: 100vw;
+  height: 40vh;
+  padding-top: 40px;
   
   }
   .product-slider__title {
@@ -762,6 +768,7 @@ button, hr, input {
   }
   .product-slider__card {
   border-radius: 20px;
+  height: 55vh;
   }
   .product-slider__cover {
   border-radius: 20px;
@@ -782,7 +789,7 @@ button, hr, input {
     transform: translateY(55px);
     transition: all 0.5s;
     align-items: stretch;
-    align-content: center;
+    align-content: flex-start;
 }
 
   .product-labels {
@@ -796,26 +803,21 @@ button, hr, input {
   .product-ctr .hr-vertical {
     width: 100%;
     margin: 35px 0;
-    margin: -0px -10px 0px 0px;
+    margin: 10px 0px 10px 0px;
     height: 1px;
   }
   
   .product-inf {
   width: 100%;
   }
-   .product-video__item{
-    width: 200%;
+  .product-video__item {
+    width: 120%;
+    justify-self: unset;
     position: relative;
-    display: block;
-    /* top: -200px; */
-    margin-left: -55%;
     z-index: 3;
-    /* height: 150%; */
-    /* margin: auto; */
-    /* left: 55%; */
-    /* margin-left: -180px; */
+    left: 40%;
     transform: scaleX(-1);
-   }
+  }
    .product-img__item img {
     object-fit: contain;
     object-position: center right;
@@ -893,6 +895,39 @@ button, hr, input {
     line-height: 1;
     margin-bottom: 0;
   }
+  .product-inf__title {
+    font-family: "Dosis", sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 70%;
+  }
+.product-slider__bottom {  
+  bottom: -55px;
+  }
+  .product-slider__cart {
+  box-shadow: 0 7px 99px 0 rgb(204 51 66 / 60%);
+  box-shadow: 0 7px 99px 0 rgb(33 170 195);
+  background-image: linear-gradient(-45deg, #cc3843 0%, #cb193f 100%);
+  background-image: linear-gradient(-45deg, #7500ff 0%, rgb(33 170 195) 100%);
+  border: none;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 50px;
+  min-height: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-right: 40px;
+  cursor: pointer;
+  outline: none !important;
+  left: 0;
+  right: 0;
+  line-height: 12px;
+  margin: 0px 50px 0px 50px;
+  text-align: center;
+  margin-bottom: 5px;
+  }
+
 }
 
 
