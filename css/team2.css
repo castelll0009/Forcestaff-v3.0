@@ -299,6 +299,7 @@ progress, sub, sup {
   opacity: 0.5;
   margin-left: 0;
   margin-right: 20px;
+  
 }
 .product-inf {
   text-align: center;
@@ -803,7 +804,7 @@ button, hr, input {
   .product-ctr .hr-vertical {
     width: 100%;
     margin: 35px 0;
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0px 2px 0px;
     height: 1px;
   }
   
@@ -925,10 +926,13 @@ button, hr, input {
   left: 0;
   right: 0;
   line-height: 12px;
-  margin: 0px 50px 0px 50px;
+  margin: 0px 30px 0px 0px;
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 5px;      
   }
+  .product-slider__fav {    
+    font-size: 12px;
+}
 
 }
 
