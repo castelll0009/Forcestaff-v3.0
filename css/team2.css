@@ -870,7 +870,8 @@ button, hr, input {
     transition: all 0.3s;
     letter-spacing: 2px;
     padding: 5px;
-    font-weight: 100;
+    font-weight: 400;
+    color: rgb(230, 230, 230);
 }
 .product-labels__checkbox:checked + .product-labels__txt {
   border-color: #cc3743;
@@ -891,10 +892,11 @@ button, hr, input {
     font-weight: 700;
     letter-spacing: 3px;
     font-size: 16px;
-    font-size: 8px;
-    line-height: 1;
+    font-size: 8px !important;
+    color: #e1e1e1;
+    line-height: 1.2;
     margin-bottom: 0;
-  }
+}
   .product-inf__title {
     font-family: "Dosis", sans-serif;
     font-weight: 700;
