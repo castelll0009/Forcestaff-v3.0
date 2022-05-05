@@ -24,8 +24,11 @@
   .gallery-image {
     padding: 20px;
     display: flex;
+    display: grid;
     flex-wrap: wrap;
     justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+
   }
   
   .gallery-image img {
@@ -40,6 +43,7 @@
     margin: 10px;
     height: 250px;
     width: 350px;
+    max-width: 100%;
     overflow: hidden;
     display: inline-block;
     color: white;
