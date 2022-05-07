@@ -13,6 +13,23 @@
     padding: 5.6vw; 
     flex-direction: row ;   
 }
+.blocks-gallery{
+
+    align-items: center;
+    display: flex !important;
+
+    position: relative;        
+    /*min-height: 100vh;*/        
+    min-height: auto;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 5.6vw; 
+    flex-direction: row ;  
+
+}
+
 .blocks-team{
     align-items: center;
     display: flex !important;
