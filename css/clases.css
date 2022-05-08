@@ -142,6 +142,9 @@ organizar elementos*/
   font-size: 11px;
   line-height: 21px;
 }
+.show-item{    
+  opacity: 1;
+}
 
 /*Resolution Mobil*/
 @media only screen and (max-width: 1200px) { 

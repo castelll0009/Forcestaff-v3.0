@@ -5,7 +5,7 @@
   }
   
   body {
-    font-family: Raleway ;
+    font-family: "Dosis", sans-serif;
     background-color: #202125;
   }
   
@@ -20,7 +20,128 @@
       padding: 40px;
       color: white;
   }
+  .btn-back-gallery {
+    border: none;
+    background: #e8e8e8;
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
   
+  }
+
+  button{
+    text-decoration: none;
+    outline: none;
+    border: none;
+  }
+  button:hover{
+    text-decoration: none;
+    outline: none;
+    border: none;
+  }
+    /*Contenedor swiper  Fotos*/
+    .title-btn-back{
+      font-size: 20px;
+      color: black;
+    }
+
+    .btn-back-gallery img{
+      width: 20px;
+      position: absolute;
+      right: 20px;
+    }
+    .cont-swiper-slide-photos{      
+      background-color: rgb(4 8 20 / 78%);
+      backdrop-filter: blur(3px);
+      position: absolute;
+      position: fixed;
+      z-index: 5;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      text-align: center;
+      flex-direction: column;      
+      padding: 20px 100px 20px 100px;
+      justify-content: center;
+      opacity: 1;
+    }
+    .cont-photos-gallery{      
+      background-color: rgb(92 92 92);
+      background-color: rgb(42 42 42);
+      border-radius: 0.5%;
+      padding: 20px;
+      /* margin: 20px 100px 20px 100px; */
+      /* height: 100vh; */
+      display: flex;
+      flex-direction: row;
+      position: relative;
+    }
+    .cont-name-photo{
+      width: 100%;
+    }
+    .header-title{
+      
+    }
+    .cont-footer{
+      position: relative;
+      width: -webkit-fill-available;
+    }
+    .icons-like-share {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      
+    }
+    .title-colletion-project{
+      padding: 0px 20px 0px 20px ;      
+      font-size: 1em;
+      text-align: left;
+    }
+    .article-slide{
+      text-align: start;
+    }
+    
+    .article-slide img{
+      width: 100%;
+      /* max-width: 800px; */
+      min-width: 60vh;
+      max-width: 80vh;
+    }
+    .footer-slide{
+    padding: 20px;
+    padding-top: 0px;
+    text-align: left;    
+    }
+    .icons-like-share {
+      width: 100%;
+    }
+    .cont-icon {
+      border: none;
+      text-decoration: none;
+      outline: none;
+      background-color: transparent;
+      padding: 6px;
+      
+    }
+    .cont-icon img{
+      width: 24px;
+      padding: 1px;
+      filter: invert(1);
+    }
+    .slide-description{
+      margin-top: 10px;
+    }
+    .cont-date__p{
+      font-size: 10px;
+      float: right;
+    }
+  
+    /*gallery properties*/
   .gallery-image {
     padding: 20px;
     display: flex;
@@ -73,6 +194,7 @@
     left: 5%;
     opacity: 0;    
     bottom: 0%;
+    bottom: -18px;
     width: 100%;
     transition: transform 0.3s ease, opacity 0.3s ease;
     line-height: 0px;
@@ -116,7 +238,52 @@
     opacity: 0.5;
   }
 
-  @media (max-width: 736px){
+  @media (min-width: 1024px ){
+    .btn-back-gallery {
+     
+      background: #e8e8e800;
+      
+   
+  }
+  .title-btn-back {
+      font-size: 18px;  
+      opacity: 0; 
+      color: white;
+   
+  }
+  
+  .btn-back-gallery img {
+    width: 30px;
+    filter: invert(1);   
+    
+  }
+  }
+  @media (max-width: 1024px ){
+ /*Contenedor swiper  Fotos*/
+  .cont-swiper-slide-photos{
+
+    padding: 0;
+  }
+  .cont-photos-gallery{
+    width: 100%;
+    border-radius: 0;
+    padding: 0px;
+    margin: 0px;    
+    flex-direction: column;
+     height: 100vh;
+  }
+  .title-colletion-project{
+
+  }
+  .article-slide img{
+    /*max-width: 400px;*/
+  }
+  .icons-like-share {
+    position: relative;
+    bottom: 0;
+  }
+
+
  .gallery-image {
     column-gap: 5px;  
     row-gap: 5px; 
@@ -133,4 +300,17 @@
 
 
   }
+  .cont-name-photo{
+    width: 100%;
   }
+  .footer-slide{
+
+    padding-top: 0;
+    }
+    .title-btn-back {
+      font-size: 12px;      
+  }
+  .btn-back-gallery img {
+    width: 15px;
+  }
+}
