@@ -120,6 +120,13 @@
 justify-content: center;
 }
 
+.padding-imagen{
+  padding: 20px 0px 20px 20px;
+}
+.padding-elementos{
+  padding: 10px 20px 10px 20px;
+}
+
 
 /*Ajuste de elemntos CARDS
 organizar elementos*/
