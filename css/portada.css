@@ -2,14 +2,17 @@
   
 }
 .div1-main{
+    min-height: 10vh;
+    max-height: 100vh;
 	/*background-image: url(../imgs/original.png);*/
 	background-repeat: no-repeat;
 	background-size: cover;			
 	background-position: center;						
 }
 .text-introduction{
+    margin-bottom: 0px;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 3vw;
+    font-size: 5vw;
     letter-spacing: 2px;
     line-height: 1em;
 
@@ -26,6 +29,12 @@ h3{
     color: #f9f9f9;  
     font-size: 28px;
     line-height: 38px;  
+}
+.slogan{
+    color: white;
+    font-size: 30px;
+    font-size: 1.5vw;
+
 }
 .item1{
     /*
@@ -58,7 +67,7 @@ h3{
     display: block;
     height: auto;
     width: 100%;
-    
+    margin-top: 80px;
     max-width: 60%;
 }
 .cont-picture-portada img{
@@ -148,6 +157,12 @@ h3{
         font-size: 5vw;
         letter-spacing: 2px;
         line-height: 1em;
+
+    
+    }
+    .slogan{
+   
+        font-size: 3vw;
     
     }
     
