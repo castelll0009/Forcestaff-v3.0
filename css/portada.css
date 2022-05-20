@@ -10,12 +10,11 @@
 	background-position: center;						
 }
 .text-introduction{
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 5vw;
     letter-spacing: 2px;
     line-height: 1em;
-
 }
 
 h3{    
@@ -67,7 +66,7 @@ h3{
     display: block;
     height: auto;
     width: 100%;
-    margin-top: 80px;
+    margin-top: 0px;
     max-width: 60%;
 }
 .cont-picture-portada img{
