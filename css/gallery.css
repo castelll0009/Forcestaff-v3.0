@@ -92,8 +92,11 @@
       max-width: 1400px;
       align-self: center;
     }
-    .cont-name-photo{
-      width: 100%;
+   
+    .cont-name-photo {
+      width: 80%;
+      min-width: 70%;
+      max-width: 900px;
     }
     .header-title{
       border-bottom: 1px solid #ffffff54;
@@ -118,7 +121,9 @@
     }
     .article-slide{
       text-align: start;
+      position: relative;
     }
+    
     
     .article-slide img{
       width: 100%;

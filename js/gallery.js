@@ -25,10 +25,8 @@ $('.cont-swiper-slide-photos').toggle('show-item');
   $(document).ready(function() {
     // Swiper: Slider
         new Swiper('.swiper-container', {
-            loop: true,
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-            slidesPerView: 3,
+            loop: false,   
+            slidesPerView: 1,
             paginationClickable: true,
             spaceBetween: 20,
             effect: 'fade',
@@ -43,11 +41,11 @@ $('.cont-swiper-slide-photos').toggle('show-item');
             },
             breakpoints: {
                 1920: {
-                    slidesPerView: 3,
+                    slidesPerView: 1,
                     spaceBetween: 30
                 },
                 1028: {
-                    slidesPerView: 2,
+                    slidesPerView: 1,
                     spaceBetween: 30
                 },
                 480: {
