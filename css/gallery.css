@@ -23,6 +23,7 @@
   .btn-back-gallery {
     border: none;
     background: #e8e8e8;
+    background:#2a2a2a ;
     display: flex;
     flex-direction: row;
     padding-left: 20px;
@@ -46,7 +47,8 @@
     /*Contenedor swiper  Fotos*/
     .title-btn-back{
       font-size: 20px;
-      color: black;
+      color: white;
+
     }
     /*
     ::-webkit-scrollbar {
@@ -58,6 +60,8 @@
       width: 20px;
       position: absolute;
       right: 20px;
+      filter: invert(1);
+      
     }
     .cont-swiper-slide-photos{      
       background-color: rgb(4 8 20 / 78%);
@@ -239,6 +243,12 @@
     top: 0;
     left: 0;
     transition: background-color 0.3s ease;
+  }
+  .caption p{
+    line-height: 5px ;
+  }
+  .caption-p2{
+    line-height: 1em !important;
   }
   
   .img-box:hover img { 
