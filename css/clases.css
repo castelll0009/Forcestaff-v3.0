@@ -152,6 +152,10 @@ organizar elementos*/
 .show-item{    
   opacity: 1;
 }
+.hidden-item{    
+  opacity: 0;
+  display: none;
+}
 
 /*Resolution Mobil*/
 @media only screen and (max-width: 1200px) { 
