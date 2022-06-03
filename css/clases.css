@@ -137,6 +137,13 @@ organizar elementos*/
     margin: 0 -12px;
     padding-left: 0;
 }
+.grid-list-normal{  
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: normal;
+    margin: 0 -12px;
+    padding-left: 0;
+}
 .grid-list-no-space {  
   display: flex;
   flex-direction: row;  
