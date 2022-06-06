@@ -133,7 +133,7 @@ organizar elementos*/
 .grid-list {  
   display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     margin: 0 -12px;
     padding-left: 0;
 }
@@ -143,6 +143,15 @@ organizar elementos*/
     justify-content: normal;
     margin: 0 -12px;
     padding-left: 0;
+}
+.grid-list-2-columns{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: normal;
+  margin: 0 -12px;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .grid-list-no-space {  
   display: flex;
@@ -168,7 +177,10 @@ organizar elementos*/
 @media only screen and (max-width: 1200px) { 
   .grid-list {    
     flex-wrap: wrap; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     
   }
+ 
 }
 
