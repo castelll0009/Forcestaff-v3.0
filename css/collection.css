@@ -111,7 +111,7 @@ h1{
     color: #1fd2f1;
     font-size: 11px;
     background-color: #10131d;
-    width: 50%;
+    width: max-content;
     border-bottom-left-radius: 4px;
 }
 .hire-card{    
