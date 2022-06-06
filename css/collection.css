@@ -27,16 +27,22 @@
     font-weight: 600 ;
     margin-left: 0;
 }
+.info-card__img-price-value{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 .span-icon-solana img{
     display: block;
     width: 100%;
+    width: 20px;
 }
 
 
 .div-content-card{
     width: 100%;
-    background-color: #191e2e;
+    background-color: #120c18;
     border-radius: 15px;
     position: relative;
     /* border: 1px solid #313c60; */
@@ -102,6 +108,7 @@
     color: #1fd2f1;
     font-size: 11px;
     background-color: #10131d;
+    width: 50%;
     border-bottom-left-radius: 4px;
 }
 .hire-card{    
@@ -202,31 +209,77 @@ h4{
     line-height: 25px;
     color: rgb(87, 87, 87);
 }
-/*MOVil*/
-@media only screen and (min-width: 600px) and  (max-width: 1200px) { 
-    .card{
-        max-width: 50%;                
-    }
-    .captions-card-description{    
-     font-size: 0.5em;
-    }
+.captions-card-description{
+    padding: 10px;
 }
-
+/*PC*/
 @media only screen and (max-width: 1200px) { 
   
-    .card-description h4{
-        font-size: 1em;
+    .card-description h4{        
     }
     .card-description p{
         font-size: .9em;
         line-height: 14px;
-    }
+        line-height: 0px;
+    }  
 }
 
-/*PC */
+/*MOVil*/
+@media only screen and (min-width: 600px) and  (max-width: 1200px) { 
+    .card{
+        max-width: 100%;                
+    }
+    .captions-card-description{    
+    
+    }
+    .test-card .p-price{        
+    }  
+    
+    
+ 
+}
 @media only screen and (max-width: 600px) {
     .card{
         max-width: 100%; 
         min-width: 100%;     
     }
+    .info-card{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    }
+    .span-icon-solana img {    
+        width: 15px;
+    }
+    .test-card .p-price-value {
+        color: white;
+        font-size: 1.8em;   
+           
+    }
+    .test-card .p-price{
+        font-size: 1.2em;
+        line-height: 1.2em;
+    }  
+    .captions-card-description {
+        padding-bottom: 0px;
+        font-size: 1em;
+    }  
+    .captions-card-description h4,h5 {
+        padding-bottom: 0px;
+        font-size: 1em;
+    } 
+    .card-description p {
+        margin: 0;
+        margin-top: 0px;
+        font-size: 15px;
+        line-height: 20px;
+        color: rgb(87, 87, 87);
+    }
+ 
+  
 }
+
+
+
