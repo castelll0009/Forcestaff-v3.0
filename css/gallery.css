@@ -508,3 +508,14 @@
     min-height: 100%;
   }
 }
+/*///////////////////////////*/
+/*///////////////////////////*/
+/*///////////////////////////*/
+/*Movil peqeño*/
+@media only screen and (max-width: 700px){
+  .grid-list {
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr !important;
+}
+}
