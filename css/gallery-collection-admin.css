@@ -1,0 +1,13 @@
+.form-search-collection{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.form-search-collection input{
+    max-width: 70%;
+    width: 70%;
+}
+.form-search-collection button{
+    max-width: 30%;
+    width: 30%;
+}
