@@ -198,9 +198,7 @@
 				<p class="description-collections large">Here you can create, udpdate and  delete the collection of gallery of  forcestaff.</p>	
 				
 				<!--Form Container Collection -->
-				<div class="container">
-					<div class="col p-4">
-					  <div class="col-md-5">
+				<div class="container">				
 						<div class="card form-card">
 						  <div class="card-body">                                      
 						
@@ -223,88 +221,17 @@
 							  </form>		
 			  
 							<form id="task-form"  enctype="multipart/form-data">                                                                                                              
-							<!-- 
-							  <form id="task-form" action="backend/subir-img.php" method="POST" enctype="multipart/form-data">                                                  
-							  <input type="file" name="archivo" id="archivo">                  
-							-->              
-							  <!-- <button type="submit" name="btn-submit">Cargar imagen</button> -->            
-							  <!-- FORM TO ADD TASKS 
-							<form  id="task-form" enctype="multipart/form-data">
-							  <div class="form-group subir-imagen">
-								<canvas id="canvas" width="300" height="300"></canvas>
-								<label for="archivo" id="archivoFile">Seleccionar imagen</label>
-								<input onchange="obtenerImagen()" type="file" name="archivo" id="archivo">
-								<div onclick="mostrarResultado()" id="mostrar">Mostrar resultado</div>              
-								<img id="imagenMostrada" name="imagenMostrada">                          
-							  </div>
-							-->
+										
 							  <div class="form-group">
-								<select type="text" id="category" class="form-control" placeholder="Categoria">
-								  <option  value="cafes">Cafes</option>
-												<option  value="frappes">Frappes</option>
-												<option  value="bebidasCalientes">Bebidas Calientes</option>
-								  <option  value="bebidasFrias">Bebidas Frias</option>
-								  <option  value="malteadas">Malteadas</option>
-								  <option  value="megaMalteadas">Mega Malteadas</option>
-								  <option  value="wafflesdeSal">Waffles de sal</option>
-								  <option  value="wafflesDulces">Waffles Dulces</option>
-								  <option  value="antojos">Antojos</option>
-								  <option  value="cocteles">Cocteles</option>
-								  <option  value="papicar">Papicar</option>
-								</select>
-							  </div>
+								<input type="text" name="name" id="name" placeholder="Name collection" class="form-control">
+							  </div>	
 							  <div class="form-group">
-								<input type="text" name="name" id="name" placeholder="Nombre Producto" class="form-control">
-							  </div>
+								<input type="text" name="name-autor" id="id-autor" placeholder="Autor" class="form-control">
+							  </div>							
 							  <div class="form-group">
-								  <input type="number" name="price" id="price" class="form-control" placeholder="Precio"></textarea>
+								<textarea id="description" cols="30" rows="10" class="form-control" placeholder="Collection description..."></textarea>
 							  </div>
-							  <div class="form-group">
-								<textarea id="description" cols="30" rows="10" class="form-control" placeholder="Descripción del producto"></textarea>
-							  </div>
-			  
-							<!-- variantes de pedidos-->
-							  <div class="form-group">
-								<div class="div-add-variantes">
-								  <input type="text" name="title-disponibles" id="input-variantes-disponibles" placeholder="Variantes disponibles del producto" class="form-control">     
-								  <button type="button" class="btn-add-variantes btn-block text-center">Agregar </button>       
-								  <button type="button" id="btn-del-variantes" class="btn-del-variantes btn-block text-center">Eliminar </button>    
-								</div>                      
-								<select type="text" id="sel-variantes-disponibles" class="form-control" placeholder="disponibles">                    						      
-								  <option value="Ninguna"> Ninguna</option>
-								</select>                  
-							  </div>
-							  
-							<!-- variantes de pedidos-->
-							  <div class="form-group">
-								<div class="div-adiciones">
-								  <input type="text" name="title-adiciones" id="input-adiciones-disponibles" placeholder="Adiciones disponibles de tu producto" class="form-control">     
-								  <button type="button" class=" btn-add-adiciones btn-block text-center">Agregar </button>                          
-								  <button type="button" id="btn-del-adiciones" class="btn-del-adiciones btn-block text-center">Eliminar </button>    
-								</div>                                      						      
-								<select type="text" id="sel-adiciones-disponibles" class="form-control" placeholder="Adiciones disponibles de tu producto">
-								  <option value="Ninguna"> Ninguna</option>
-								</select>
-								
-								</select>
-							  </div>
-							   <!-- Topins -->
-							  <!--  
-							   <div class="form-group">
-								<div class="div-topings">
-								  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-								  <label for="vehicle1">Incluir topings</label><br>                     
-								  <input type="text" name="title-topings" id="input-topings-disponibles" placeholder="Topins disponibles de tu producto" class="form-control">     
-								  <button type="button" class=" btn-add-adiciones btn-block text-center">Agregar </button>                          
-								  <button type="button" id="btn-del-topings" class="btn-del-adiciones btn-block text-center">Eliminar </button>    
-								</div>                                      						      
-								<select type="text" id="sel-topings-disponibles" class="form-control" placeholder="Adiciones disponibles de tu producto">
-								  <option value="Ninguna"> Ninguna</option>
-								</select>
-								
-								</select>
-							  </div>
-								-->
+			  													  									
 			  
 							  <input name="taskId" type="hidden" id="taskId">
 							  <button type="submit" class="btn btn-primary btn-block text-center">
@@ -327,19 +254,14 @@
 						<table class="table table-bordered table-sm">
 						  <thead>
 							<tr>
-							  <td>Id</td>
-							  <td>Categoria</td>
-							  <td>Nombre</td>
-							  <td>Precio</td>
-							  <td>Description</td> 
-							  <td>Variantes disponibles</td>
-							  <td>Adiciónes</td>                                                             
+							  <td>Id</td>							  
+							  <td>Name collection</td>
+							  <td>Autor collection</td>
+							  <td>Description</td> 						                                                        
 							</tr>
 						  </thead>
 						  <tbody id="tasks"></tbody>
-						</table>
-					  </div>
-					</div>
+						</table>					
 				  </div>
 
 				<!--List of collection -->
@@ -412,11 +334,11 @@
 						ForceStaff es una plataforma de servicios por suscripción de pago o contrato, su contenido está sujeto a disponibilidad.  ForceStaff Colombia S.A, Carrera 50 No. 17 – 77 Bogotá D.C. y número de NIT es 804.116.937-1
 					</p>
 		</footer>
-						 			
+			
+	<script src="js/app-request-forcestaff.js"></script>
 	<script src="js/admin-gallery.js"></script>
 	<script src="js/jquery.js"></script>		
-	<script src="js/gallery.js"></script>	
-	<script src="js/index.js"></script>
+	<script src="js/gallery.js"></script>		
 	<script src="js/navbar.js"></script>	
 	<script src="js/funciones.js"></script>
 	 <!-- Swiper JS -->
