@@ -44,8 +44,7 @@
   ul li:hover  .collection-img-portada{
     transform: scale(1.1);
     cursor: pointer;
-  }
-    
+  }    
   
   .card-description {
     background-color: #191e2e;
