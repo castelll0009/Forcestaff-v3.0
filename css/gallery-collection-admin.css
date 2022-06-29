@@ -36,6 +36,10 @@
     
     
 }
+.content-shape-diamond .cont-circular-img-collection img {    
+    border: solid 0px #ffffff2b; 
+
+}
 .diamond3{
     margin-left: -1.9px;
 }
