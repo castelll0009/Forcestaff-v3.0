@@ -13,8 +13,7 @@ $(function(){
             if(!response.error) {
                 let tasks = JSON.parse(response);
                 let template = '';
-                tasks.forEach(task => {
-                    alert(task.ruta_img_portada);
+                tasks.forEach(task => {                    
                   template += `
                   <li class="grid-item center  card-castell ">
                   <a href="gallery-collection.html">	
@@ -26,7 +25,7 @@ $(function(){
                           </div>
                           <div class="card-description ">
                               <div class="cont-circular-img-collection "> <img src="imgs/collections/1 (1).gif" alt=""></div>
-                              <h4 class="">Project Genesis</h4>
+                              <h4 class="">${task.nombre_coleccion}</h4>
                               <div class="card-description__created-by">
                                   <h5 >by</h5>
                                   <a href="https://castelll0009.github.io/Forcestaff-v3.0/" class="text-card__creator">ForceStaff <i class="fa-regular fa-hand-point-left"></i></a>
