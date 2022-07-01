@@ -10,8 +10,15 @@
     background-color: transparent;
    
 }
-.card-castell{
-    min-width: 400px !important;
+.card-form{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    /* max-width: 25%; */
+    /* min-width: 400px; */
+    height: fit-content;
+    background-color: transparent;
 }
 .grid-list{
     
@@ -19,10 +26,11 @@
 
 
 .col1-setting{
-
+    max-width: 25%;
+    min-width: 300px;
 }
 .col2-list-collections{
-
+   
 }
 .col2-list-collections ul{
     flex-direction: row;
@@ -36,8 +44,7 @@
 
 .flexbox-container > div {
 	width: 50%;
-	padding: 10px;
-  background: #fff;
+	padding: 10px;  
 }
 
 .flexbox-container > div:first-child {
