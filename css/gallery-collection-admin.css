@@ -1,3 +1,7 @@
+.grid-list{
+    
+    justify-content: center;
+}
 .form-search-collection{
     display: flex;
     flex-direction: row;

@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
   }
+  .grid-list{    
+    justify-content: center !important;
+  }
   
   body {
     font-family: "Dosis", sans-serif;
