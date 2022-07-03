@@ -11,12 +11,12 @@
         '162.241.2.168','forcesta_castelll0009','Castillo1997177-','forcesta_forcestaff-db'
     );
 
-    
+    /*
     if($connection){
         echo "database is connected";
     }else{
         echo "no se pudo conectar a la BD";
     }
-
+*/
 
 ?>
