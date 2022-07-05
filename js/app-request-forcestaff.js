@@ -1,15 +1,14 @@
 $(document).ready(function() {  
-    fetchProducts();//enlistamos  las cuentas
+    fetchProducts();// list de  collections
     //addEditElements();  
     //editElements();
     searchShowElements();  
     //searchShowElementsByDate();
     //searchShowElementsByDateRanges();
    // eliminarElementos();        
-    //ListUsuariosSelect(); 
+    //ListUsuariosSelect();     
   });
   
-
 //FUNCIONES   
 
     function searchShowElements(){
