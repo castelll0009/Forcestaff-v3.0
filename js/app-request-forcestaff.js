@@ -112,7 +112,7 @@ function getTemplateCardCollection(jsonElements){
                     <h4 class="">${element.nombre_coleccion}</h4>
                     <div class="card-description__created-by">
                         <h5 >by</h5>
-                        <a href="${element.link_autor}" class="text-card__creator">${element.autor} <i class="fa-regular fa-hand-point-left"></i></a>
+                        <a href="https://${element.link_autor}" class="text-card__creator">${element.autor} <i class="fa-regular fa-hand-point-left"></i></a>
                     </div>
             
                 
