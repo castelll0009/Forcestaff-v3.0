@@ -13,20 +13,27 @@ $(document).ready(function() {
 
     function searchShowElements(){
         $("#search").keyup(function(){
-            let search = $("#search").val();       
-            $.ajax({
-                url: "backend/search-collection.php",
-                type: "POST",
-                data: {search},
-                success: function(response){
-                    console.log(response);
-                    if(!response.error) {
-                        let elements = JSON.parse(response);                                                      
-                        $('.ul-content-collection').html(getTemplateCardCollection(elements));                         
+            if( ($('#search').val()) == "" ){   
+                //esta  vacio el search por ende  solo  enlistamos  los productos       
+                fetchProducts();
+            }else{
+                let search = $("#search").val();       
+                $.ajax({
+                    url: "backend/search-collection.php",
+                    type: "POST",
+                    data: {search},
+                    success: function(response){
+                        console.log(response);
+                        if(!response.error) {
+                            let elements = JSON.parse(response);                                                      
+                            $('.ul-content-collection').html(getTemplateCardCollection(elements));                         
+                        }
                     }
-                }
-            })    
-           })
+                })
+            }
+        });    
+           
+      
         
     }
   
