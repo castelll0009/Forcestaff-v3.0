@@ -1,7 +1,9 @@
 <?php
     include('conection-db.php');
     if(isset($_POST['name_collection'])){
-        $ruta_img_portada = "imgs/collections/place-holder-portada.png";
+        //$ruta_img_portada = "../imgs/collections/";
+        //$ruta_img_portada = $ruta_img_portada .$_POST['nombre_imagen_portada'];
+        $ruta_img_portada = $_POST['ruta_img_portada'];
         $name_collection = $_POST['name_collection'];
         $name_autor  = $_POST['name_autor'];
         $link_autor = $_POST['link_autor'];

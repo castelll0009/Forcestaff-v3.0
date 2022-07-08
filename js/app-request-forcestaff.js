@@ -1,5 +1,7 @@
 var edit = false; 
+
 $(document).ready(function() {  
+    $(".upload").trigger('click'); //redirecciona haciendo click en el swiper-paginattion correspondiente POOM               
     fetchProducts();// list de  collections
     addEditElements();  
     editElements();
@@ -59,13 +61,16 @@ function addEditElements(){
    
         e.preventDefault(); //previene  que la  pagina  se recargue automaticamente
           const postData = {
-            id: $('#taskId').val(),              
+            id: $('#taskId').val(), 
+            //nombre_imagen_portada:  $('#id-image').val().replace(/C:\\fakepath\\/i, ''),      //enviamos el nombre del archivo sin la ruta                   
+            ruta_img_portada:  $('#id-ruta-img-portada').val(),
             name_collection: $("#name-collection").val(),
             name_autor : $("#name-autor").val(),
             link_autor :$("#link-autor").val(),
             description :$("#description").val()  
           };
-          console.log("posData: " + postData.name_collection +" "+ postData.name_autor +" "+ postData.link_autor +" "+ postData.description);          
+               
+          console.log("nombre imagen portada: "+ postData.nombre_imagen_portada+" ruta imagen portada:  "+ postData.ruta_img_portada + " posData: " + postData.name_collection +" "+ postData.name_autor +" "+ postData.link_autor +" "+ postData.description);          
           const url = edit === false ? 'backend/collection-add.php' : 'backend/collection-edit.php';   
           //const url = 'backend/collection-add.php';          
           //const  url =  'backend/product-add.php';
@@ -73,14 +78,16 @@ function addEditElements(){
             edit=false;
             //alert(response);
             console.log("RESPUESTA ADD: "+ response);
-            $('#task-form').trigger('reset'); //refresco el formulario 
+         
+            $("#id-image").val("");
+            $(".card-img-top").attr("src", ruta_img_portada_defecto);
+            $('#task-form').trigger('reset'); //refresco el formulario           
            // document.getElementById('name-action').innerHTML = 'New Product';
             fetchProducts();
           });
           //location.reload();
     });        
 }
-
 function editElements(){  
     //////////EDITAR PRODUCTOS- cargar datos en el formulario
     $(document).on('click', ".item-collection", function(){         
@@ -90,28 +97,31 @@ function editElements(){
        //primero obtenemos los datos del elemtno clickeado                 
        
        $.post('backend/collections-select-single.php', {id}, function(response){
-          edit = true;
-          //console.log("Edit Elements "+ response);
-          const task  = JSON.parse(response);          
-          //alert(auxNewfecha) ;
-          //const task  = response;
-          //entregamos los datos a las etiquetas
-          //$(".card-img-top").attr("src",task.imagen);    
-          //alert(task.pin);
-          //$('#ruta_img_portada').val(task.ruta_img_portada);                      
-          $('#name-collection').val(task.nombre_coleccion);            
-          $('#name-autor').val(task.autor);
-          $('#link-autor').val(task.link_autor);        
-          $('#description').val(task.descripcion);                      
-          //$('#').checked =(task.estado_cuenta);           
-          $('#taskId').val(task.id);                                                      
+            edit = true;
+            //console.log("Edit Elements "+ response);
+            const task  = JSON.parse(response);          
+            //alert(auxNewfecha) ;
+            //const task  = response;
+            //entregamos los datos a las etiquetas
+            $(".card-img-top").attr("src",task.ruta_img_portada);      
+            $('#id-image').val("");
+            //alert(task.pin);
+            //$('#ruta_img_portada').val(task.ruta_img_portada);                     
+            $('#id-ruta-img-portada').val(task.ruta_img_portada);                         
+            $('#name-collection').val(task.nombre_coleccion);            
+            $('#name-autor').val(task.autor);
+            $('#link-autor').val(task.link_autor);        
+            $('#description').val(task.descripcion);                      
+            //$('#').checked =(task.estado_cuenta);           
+            $('#taskId').val(task.id);     
+                             
        })         
      
   });
 }
 function deleteElements(){   
-    $(document).on('click', ".btn-collection-delete", function(){
-        
+    $(document).on('click', ".btn-collection-delete", function(event){
+        event.stopPropagation();
       if(confirm("Are  you sure you want to delete this item?")){
           let element = $(this)[0].parentElement.parentElement;   
           let id = $(element).attr('taskId');
@@ -120,10 +130,10 @@ function deleteElements(){
               console.log("delete "+ response);
               fetchProducts();
           })
-      }   
-      event.stopPropagation();      
-    });
-  }
+      }              
+    }); 
+    $('#task-form').trigger('reset'); //refresco el formulario      
+}
 
 //FUNCION QUE CREA LA PLANTILLA HTML APARTIR DE LOS DATOS
 function getTemplateCardCollection(jsonElements){
@@ -139,7 +149,7 @@ function getTemplateCardCollection(jsonElements){
             <span id="taskId">${element.id}</span>	
             <span class="btn-collection-delete"><i class="fa-solid fa-trash-can"></i></span>								
                 <div class="cont-img-services">	
-                    <img class="collection-img-portada" src="imgs/collections/place-holder-portada.png" >																
+                    <img class="collection-img-portada" src="${element.ruta_img_portada}" >																
                 </div>
                 <div class="card-description ">
                     <div class="cont-3-images">

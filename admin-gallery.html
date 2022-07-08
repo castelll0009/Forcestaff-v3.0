@@ -202,39 +202,47 @@
 						<div class=" form-card flexbox-container">
 
 						  <div class="card-body col1-setting">                                      									   
-							<form method="post" action="#" enctype="multipart/form-data">
-							  <div class="card-form "  >
-								<img class="card-img-top" src="imgs/collections/place-holder-portada.png">
+							<form  method="post" action="#" enctype="multipart/form-data">
+							  <div class="card-form "  >							
+								<div class="form-group">								
+									<input  required type="file" class="form-control-file" name="image" id="id-image" >
+									<label for="id-image">
+										<img class="card-img-top  " id="imgPreview"   src="imgs/collections/place-holder-portada.png" />
+									</label>
+								</div>
 								<div class="card-body">
 								  <h5 class="card-title">Upload your cover image</h5>
 								  <p class="card-text">
 									The valid formats are the following
 									.jpg,png, or Gif</p>                    
-								  <div class="form-group">
-									<label for="image">New Image</label>
-									<input type="file" class="form-control-file" name="image" id="image">
-								  </div>
+								
 								  <input type="button" class="btn btn-primary upload" value="Subir">
+								 
 								</div>
 							  </div>
-							  </form>					  
+							</form>	
+
 							<form id="task-form"  enctype="multipart/form-data">                                                                                                              
-										
+							 <div class="form-group">
+								<input  required type="text" name="name-imagen-portada" id="id-ruta-img-portada" placeholder="Upload picture" class="form-control">
+							 </div>	
 							  <div class="form-group">
-								<input type="text" name="name-collection" id="name-collection" placeholder="Name collection" class="form-control">
+								<input required type="text" name="name-collection" id="name-collection" placeholder="Name collection" class="form-control">
 							  </div>	
 							  <div class="form-group">
-								<input type="text" name="name-autor" id="name-autor" placeholder="Autor" class="form-control">
+								<input required type="text" name="name-autor" id="name-autor" placeholder="Autor" class="form-control">
 							  </div>
 							  <div class="form-group">
-								<input type="text" name="link-autor" id="link-autor" placeholder="Link autor" class="form-control">
+								<input required type="text" name="link-autor" id="link-autor" placeholder="Link autor" class="form-control">
 							  </div>							
 							  <div class="form-group">
-								<textarea id="description" cols="30" rows="10" class="form-control" placeholder="Collection description..."></textarea>
+								<textarea required id="description" cols="30" rows="10" class="form-control" placeholder="Collection description..."></textarea>
 							  </div>
 			  													  									
 			  
-							  <input name="taskId" type="hidden" id="taskId">
+							  <!--
+ 								<input name="taskId" type="hidden" id="taskId">
+							  -->							 
 							  <button type="submit" class="btn btn-primary btn-block text-center">
 								Guardar/Subir producto 
 							  </button>
@@ -352,6 +360,7 @@
 					</p>
 		</footer>
 			
+	<script src="js/collection-subir-img-form.js"></script>
 	<script src="js/app-request-forcestaff.js"></script>
 	<script src="js/admin-gallery.js"></script>
 	<script src="js/jquery.js"></script>		

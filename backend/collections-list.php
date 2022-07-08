@@ -4,6 +4,7 @@ include("conection-db.php");
 
   $query = "SELECT * 
     FROM tbl_coleccion
+    ORDER BY id DESC
   ";
   $result = mysqli_query($connection, $query);
   // si no hay  encuentra resultados se cierra la conexion
