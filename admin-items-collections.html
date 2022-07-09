@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset= "utf-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<!--css-->				
+		<!--css admin item collection-->					
+		<link rel="stylesheet" href="css/item-collection-admin-form.css">	
+				
+		<!--css items collections-->				
+		<link rel="stylesheet" href="css/collection.css">					
+
+		<link rel="stylesheet" href="css/block1-services.css">		<!--cards-blocks-->	
+		<link rel="stylesheet" href="css/gallery.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/blocks.css">
+		<link rel="stylesheet" href="css/clases.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/navbar.css">
+		<link rel="stylesheet" href="css/main-btn-arrow-down.css">	
+			<!--css swiper slide-->
+			<link rel="stylesheet" href="css/gallery-swiper-slide.css">		
+		 <!-- Link Swiper's CSS -->
+		 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+		<!--css-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<!--font awesome-->
+		<script src="https://kit.fontawesome.com/6797723c8a.js" crossorigin="anonymous"></script>
+		<!--Team ForceStaff-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+		<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Zilla+Slab:wght@500&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>		
+		<title>ForceStaff</title>	
+		<link rel="icon" type="image/x-icon" href="favicon.ico.png">
+		 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title>Galeria marketing y  publicidad</title>	
+	</head>
+	<body> 	
+			
+		<!--navbar.css-->
+		<header>
+			<nav id="pre-stick" class="nav pre-stick">						
+				<a href="#" class="btn-wallet"><span class="span-cont-img"><img src="imgs/cart.png"></span> </a>		
+				<a href="#" class="btn-login"><span class="span-login">Log In</span></a>																	
+			</nav>
+
+			<nav id="post-stick" class="nav post-stick">
+				<a class="a-img-logo">	
+					<picture class="picture-img-logo" >
+						<img id="id-img-logo" src="imgs/logo.png">																							
+					</picture>								
+				</a>																								  								
+				<nav class="nav-container" >
+					<ul class="nav-list">				
+						<li>
+						<a href="index.html">Home</a>
+						</li>
+						<li>
+						<a href="#!">Services</a>
+						<ul class="navbar-dropdown">							
+							<li>
+							<a href="#!">Personalized desing</a>
+							</li>
+							<li>
+							<a href="#!">Art for you NFTs</a>
+							</li>
+							<li>
+								<a href="#!">Web desing</a>
+							</li>							
+						</ul>
+						</li>
+						<li>						
+						<a href="Team2.html">Team</a>						
+						</li>
+						<li>
+						<a href="gallery.html">Gallery</a>						
+						</li>
+						<li>
+						<a href="gallery.html">About us</a>
+					
+						
+						</li>
+						<li>
+						<a href="#!">Contact</a>
+						</li>					
+					</ul>
+										
+				
+					 			
+				</nav>
+
+				
+				<a href="#" class="btn-wallet"><span class="span-cont-img"><img src="imgs/cart.png"></span></a>		
+				<a href="#" class="btn-login"><span class="span-login">Log In</span></a>		
+				<div class="nav-mobile"><a id="navbar-toggle" href="#!"><span></span></a></div>
+			</nav>	
+					  																			
+		</header>				
+
+		<main style="text-align: center;">			
+			<div  class="sidealing blocks" style="flex-direction: column;">
+		
+				<form class="form-search-collection form-inline my-2 my-lg-0" style="position: fixed; z-index:2;">
+					<input  name="search" id="search" class=" form-control mr-2 mr-sm-2" type="search" placeholder="Search collection" aria-label="Search">
+					<button class="btn  my-2 my-sm-0" style="background-color: rgb(0, 183, 255);" type="submit">Buscar</button>
+				</form>	
+
+				<h1 class="title-gallery">Admin Collections </h1>
+				<p class="description-collections large">Here you can create, udpdate and  delete the collection of gallery of  forcestaff.</p>	
+				
+				<!--Form Container ITEMS Collection -->
+				<div class="container">				
+						<div class=" form-card flexbox-container">
+
+						  <div class="card-body col1-setting">                                      									   
+							<form  method="post" action="#" enctype="multipart/form-data">
+							  <div class="card-form "  >							
+								<div class="form-group">								
+									<input  required type="file" class="form-control-file" name="image" id="id-image" >
+									<label for="id-image">
+										<img class="card-img-top  " id="imgPreview"   src="imgs/collections/place-holder-portada.png" />
+									</label>
+								</div>
+								<div class="card-body">
+								  <h5 class="card-title">Upload your cover image</h5>
+								  <p class="card-text">
+									The valid formats are the following
+									.jpg,png, or Gif</p>                    
+								
+								  <input type="button" class="btn btn-primary upload" value="Subir">
+								 
+								</div>
+							  </div>
+							</form>	
+
+							<form id="task-form"  enctype="multipart/form-data">                                                                                                              
+								<div class="form-group">
+									<input  required type="text" name="name-imagen-item" id="id-ruta-img-item" placeholder="Upload picture" class="form-control">
+								</div>									
+								<div class="form-group">
+									<label>
+										Owner of this item
+									</label>
+									<input type="text" name="search-collection" id="id-input-search-collections" placeholder="Name or owner of collection" class="form-control">     
+									<button type="button" class="btn-add-variantes btn-block text-center">Search</button>                                           
+									<div class="form-group">                  
+										<select type="text" id="id-select-collection" class="form-control" placeholder="propietario">                                                       
+										</select>	
+									</div>								
+								</div>	
+								<div class="form-group">
+									<input required type="text" name="name-item" id="name-item" placeholder="Name item" class="form-control">
+								</div>	
+								<div class="form-group">
+									<input required type="text" name="collection-owner" id="collection-owner" placeholder="Owner" class="form-control">
+								</div>
+								<div class="form-group">
+									<input required type="number" name="price" id="price" placeholder="Price" class="form-control">
+								</div>														 
+																									
+			  
+							  <!--
+ 								<input name="taskId" type="hidden" id="taskId">
+							  -->							 
+							  <button type="submit" class="btn btn-primary btn-block text-center">
+								Guardar/Subir producto 
+							  </button>
+							</form>
+						  </div>
+						  <!--List of ITEMS collection -->
+						  <div class="card-body col2-list-collections ">						
+							<Ul class=" center ul-content-collection ">														
+							<li class="grid-item center  card-castell ">
+								<a href="gallery-collection.html">	
+								
+									<div class="div-content-card-collection">										
+										<div class="cont-img-services">	
+											<img class="collection-img-portada" src="imgs/collections/portada-genesis.png" alt="">																
+										</div>
+										<div class="card-description ">
+											<div class="cont-3-images">
+												<div class="content-shape-diamond">
+													<div class="cont-circular-img-collection item1-show"> <img src="imgs/collections/1 (5).jpeg" ></div>
+												</div>
+												<div class="content-shape-diamond">
+													<div class="cont-circular-img-collection item2-show"> <img src="imgs/collections/1 (2).jpeg" ></div>
+												</div>
+												<div class="content-shape-diamond diamond3">
+													<div class="cont-circular-img-collection item3-show"> <img src="imgs/collections/1 (8).jpeg" ></div>
+												</div>	
+																							
+											</div>
+
+											<h4 class="card-admin">Time Pixies</h4>
+											<div class="card-description__created-by">
+												<h5 >by</h5>
+												<a href="https://timepixies.io/" class="text-card__creator">Timepixies.io <i class="fa-regular fa-hand-point-left"></i></a>
+											</div>
+									
+										
+											<div class="description-collection">
+												<p>
+												This is the description of this collection, 
+												here you can find information such as the historical context of the collection and curiosities.
+												Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem corrupti officia eius harum, assumenda laudantium aliquam doloribus possimus dolor asperiores nam nesciunt placeat cumque impedit ratione maiores tempora! Aliquam, voluptatum.
+												</p>
+											</div>									
+										</div>
+									</div>	
+								</a>									
+							</li>	
+																									
+							</Ul>	
+						  </div>
+
+						</div>
+					  </div>
+			  
+					<!-- TABLE  
+					<div class="col-md-7">
+						<div class="card my-4" id="task-result">
+						  <div class="card-body">
+							
+							<ul id="containerTask"></ul>
+						  </div>
+						</div>
+			  
+						<table class="table table-bordered table-sm">
+						  <thead>
+							<tr>
+							  <td>Id</td>							  
+							  <td>Name collection</td>
+							  <td>Autor collection</td>
+							  <td>Description</td> 						                                                        
+							</tr>
+						  </thead>
+						  <tbody id="tasks"></tbody>
+						</table>					
+				  	</div>
+					-->
+
+			
+			</div>					 					
+
+	
+				
+		</main>
+
+		<footer class="logo">
+			<div>
+				<picture class="picture-logo">					
+					<img src="imgs/logo-nombre.png" width="1045" height="569" alt="Disney+ Logo" loading="lazy">
+				</picture>
+				<div class="fine">
+					<div class="cont-selector-globe-down" >	
+						<span class="globe" ><img src="imgs/globe.svg" > </span>	
+						<span class="language-selector" >													
+							<select id="language-selector" class="fine">
+								<option value="/en-co/?cid=DSS-Search-Google-71700000075919706-&amp;s_kwcid=AL!8468!3!522205271658!e!!g!!disney%2B&amp;gclid=Cj0KCQjwmPSSBhCNARIsAH3cYgbhRGQCIZ3f5YvUzTPlOsH5nm672r-qGJ2x9x28qZJPaox4WCIXiP4aAqg3EALw_wcB&amp;gclsrc=aw.ds">English</option>
+								<option selected="" value="/es-co/?cid=DSS-Search-Google-71700000075919706-&amp;s_kwcid=AL!8468!3!522205271658!e!!g!!disney%2B&amp;gclid=Cj0KCQjwmPSSBhCNARIsAH3cYgbhRGQCIZ3f5YvUzTPlOsH5nm672r-qGJ2x9x28qZJPaox4WCIXiP4aAqg3EALw_wcB&amp;gclsrc=aw.ds">Español</option>
+							</select>								
+						</span>									
+						
+					</div>
+					
+				
+					<a href="#" target="_blank" class="link" rel="noopener nofollow" data-gv2-element="element" data-gv2-key="button" data-gv2-name="mlp_link" data-gv2-type="button" data-analytics="click" data-analytics-name="Link - Terms of Use - Official" data-testid="mlp_link_footer"><span>Términos de uso</span></a>
+					<a href="#" class="link" data-gv2-element="element" data-gv2-key="button" data-gv2-name="mlp_link" data-gv2-type="button" data-analytics="click" data-analytics-name="Link - Privacy Policy - Official" data-testid="mlp_link_footer"><span>Política de privacidad</span></a>
+					<a href="#" class="link" data-gv2-element="element" data-gv2-key="button" data-gv2-name="mlp_link" data-gv2-type="button" data-analytics="click" data-analytics-name="Link - Supplemental Privacy Policy - Official" data-testid="mlp_link_footer"><span>Complemento Política de privacidad</span></a>
+					<a href="#" target="_blank" class="link" rel="noopener nofollow" data-gv2-element="element" data-gv2-key="button" data-gv2-name="mlp_link" data-gv2-type="button" data-analytics="click" data-analytics-name="Link - Interest-Based Ads - Official " data-testid="mlp_link_footer"><span>Publicidad personalizada</span></a>
+					<a href="#" target="_blank" class="link" rel="noopener nofollow" data-gv2-element="element" data-gv2-key="button" data-gv2-name="mlp_link" data-gv2-type="button" data-analytics="click" data-analytics-name="Link - Supported Devices - Official" data-testid="mlp_link_footer"><span>Dispositivos compatibles</span></a>
+					<a href="#" target="_blank" class="link" rel="noopener nofollow" data-gv2-element="element" data-gv2-key="button" data-gv2-name="mlp_link" data-gv2-type="button" data-analytics="click" data-analytics-name="Link - Help - Official" data-testid="mlp_link_footer"><span>Ayuda</span></a>
+					<a href="#" data-gv2-element="element" data-gv2-key="button" data-gv2-name="mlp_link" data-gv2-type="button" data-analytics="click" data-analytics-name="Link - About Us - Official" data-testid="mlp_link_footer"><span>Acerca de ForceStaff</span></a>
+				
+				</div>
+					<p class="footnote">© 2022 ForceStaff y sus compañías afiliadas. Todos los derechos reservados.
+						<br><br>
+						ForceStaff es una plataforma de servicios por suscripción de pago o contrato, su contenido está sujeto a disponibilidad.  ForceStaff Colombia S.A, Carrera 50 No. 17 – 77 Bogotá D.C. y número de NIT es 804.116.937-1
+					</p>
+		</footer>
+			
+	<script src="js/item-collection-subir-img-form.js"></script>
+	<script src="js/app-request-items-collections.js"></script>
+	<script src="js/jquery.js"></script>		
+	<script src="js/gallery.js"></script>		
+	<script src="js/navbar.js"></script>	
+	<script src="js/funciones.js"></script>
+	 <!-- Swiper JS -->
+	 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	 <!-- Initialize Swiper -->	 
+	</body>
+</html>
