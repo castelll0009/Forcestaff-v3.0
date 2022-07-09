@@ -20,10 +20,15 @@
     height: fit-content;
     background-color: transparent;
 }
+.grid-item{
+    min-width: 250px !important;
+}
 .grid-list{
     
 }
-
+#id-ruta-img-item{
+pointer-events: none;
+}
 
 .col1-setting{
     max-width: 25%;

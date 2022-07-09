@@ -1,3 +1,4 @@
+var ruta_img_item_defecto = "imgs/collections/placeholder-items.png"
 var edit = false; 
 
 $(document).ready(function() { 
@@ -50,7 +51,8 @@ $.ajax({
     const elements = JSON.parse(response);              
     //let template_nuevo_producto = '';
     console.log(elements);    
-    $('.ul-content-collection').html(getTemplateCardItemsCollection(elements));           
+    $('.ul-content-collection').html(getTemplateCardItemsCollection(elements));        
+    //$('.ul-list-items-collection').html(getTemplateCardItemsCollection(elements));      
     //todos     
     }
 });
@@ -80,7 +82,7 @@ function addEditElements(){
             console.log("RESPUESTA ADD ITEMS: "+ response);
          
             $("#id-image").val("");
-            $(".card-img-top").attr("src", ruta_img_portada_defecto);
+            $(".card-img-top").attr("src", ruta_img_item_defecto);
             $('#task-form').trigger('reset'); //refresco el formulario           
            // document.getElementById('name-action').innerHTML = 'New Product';
             fetchProducts();
@@ -196,7 +198,6 @@ function deleteElements(){
     }); 
     $('#task-form').trigger('reset'); //refresco el formulario      
 }
-
 //FUNCION QUE CREA LA PLANTILLA HTML APARTIR DE LOS DATOS
 function getTemplateCardItemsCollection(jsonElements){
     let template= "";   

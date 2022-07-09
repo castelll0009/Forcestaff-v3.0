@@ -1,8 +1,4 @@
 
- var ruta_img_portada_global;
- var ruta_carpeta_colecciones = "imgs/collections/";
- var ruta_img_portada_defecto = "imgs/collections/place-holder-portada.png";
-
  $(".form-control-file").on("change", () => {
   crearFotoDerecho();
 });
@@ -20,7 +16,7 @@ function crearFotoDerecho(){
     $(".upload").on('click', function() {
         //si no tengo nada para subir el subir no deberia servir
         if( $('#id-image').val() === ''){ //si no se carga niguna imagen
-            $(".card-img-top").attr("src", ruta_img_portada_defecto);   
+            $(".card-img-top").attr("src", ruta_img_item_defecto);   
             $("#id-ruta-img-item").val("");                     
         }else{                              
             uploadImg();                       
@@ -43,8 +39,8 @@ function uploadImg(){
                 $(".card-img-top").attr("src", response);
                 $("#id-ruta-img-item").val($(".card-img-top").attr("src")); 
                 //console.log("response subir img js", response);
-                ruta_img_portada_global = response;
-                console.log("ruta imagen portada global: " + ruta_img_portada_global);
+                ruta_img_item_defecto = response;
+                console.log("ruta imagen portada global: " + ruta_img_item_defecto);
             } else {
                 alert('Formato de imagen incorrecto.');
             }

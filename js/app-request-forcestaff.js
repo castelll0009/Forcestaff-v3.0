@@ -1,5 +1,4 @@
 var edit = false; 
-
 $(document).ready(function() {  
     fetchProducts();// list de  collections
     addEditElements();  
@@ -138,11 +137,25 @@ function deleteElements(){
 //FUNCION QUE CREA LA PLANTILLA HTML APARTIR DE LOS DATOS
 function getTemplateCardCollection(jsonElements){
     let template= "";   
-    let img_item1 = "imgs/collections/placeholder-items.png";
-    let img_item2 = "imgs/collections/placeholder-items.png";
-    let img_item3 = "imgs/collections/placeholder-items.png";
+    let  ruta_item_defecto = "imgs/collections/placeholder-items.png";
     jsonElements.forEach(element => {
-        
+        if(element.ruta_img_item1 == null){
+            img_item1 = ruta_item_defecto;        
+           }else{
+            img_item1 = element.ruta_img_item1;        
+           }
+    
+           if(element.ruta_img_item2 == null){
+            img_item2 = ruta_item_defecto;        
+           }else{
+            img_item2 = element.ruta_img_item2;        
+           }
+    
+           if(element.ruta_img_item3 == null){
+            img_item3 = ruta_item_defecto;        
+           }else{
+            img_item3 = element.ruta_img_item3;        
+           }
         //let hrefStreaming = getHrefStreaming(product);
         template += `
         <li taskId="${element.id}" class="grid-item center item-collection  card-castell ">
@@ -157,13 +170,13 @@ function getTemplateCardCollection(jsonElements){
                 <div class="card-description ">
                     <div class="cont-3-images">
                         <div class="content-shape-diamond trigger-gotoEditItemCollection">
-                            <div class="cont-circular-img-collection item1-show"> <img src="${element.ruta_img_item1}" ></div>
+                            <div class="cont-circular-img-collection item1-show"> <img src="${img_item1}" ></div>
                         </div>
                         <div class="content-shape-diamond trigger-gotoEditItemCollection">
-                            <div class="cont-circular-img-collection item2-show"> <img src="${element.ruta_img_item2}" ></div>
+                            <div class="cont-circular-img-collection item2-show"> <img src="${img_item2}" ></div>
                         </div>
                         <div class="content-shape-diamond trigger-gotoEditItemCollection diamond3">
-                            <div class="cont-circular-img-collection item3-show"> <img src="${element.ruta_img_item3}" ></div>
+                            <div class="cont-circular-img-collection item3-show"> <img src="${img_item3}" ></div>
                         </div>	
                                                                     
                     </div>
@@ -188,12 +201,26 @@ function getTemplateCardCollection(jsonElements){
     return template;
 }
 function getTemplateCardCollectionGallery(jsonElements){ //listar en GALLERY
-    let template= "";   
-    let img_item1 = "imgs/collections/placeholder-items.png";
-    let img_item2 = "imgs/collections/placeholder-items.png";
-    let img_item3 = "imgs/collections/placeholder-items.png";
+    let template= "";
+    let  ruta_item_defecto = "imgs/collections/placeholder-items.png";
     jsonElements.forEach(element => {
-       
+       if(element.ruta_img_item1 == null){
+        img_item1 = ruta_item_defecto;        
+       }else{
+        img_item1 = element.ruta_img_item1;        
+       }
+
+       if(element.ruta_img_item2 == null){
+        img_item2 = ruta_item_defecto;        
+       }else{
+        img_item2 = element.ruta_img_item2;        
+       }
+
+       if(element.ruta_img_item3 == null){
+        img_item3 = ruta_item_defecto;        
+       }else{
+        img_item3 = element.ruta_img_item3;        
+       }
         //let hrefStreaming = getHrefStreaming(product);
         template += `
         <li taskId="${element.id}" class="grid-item center item-collection  card-castell ">
@@ -206,13 +233,13 @@ function getTemplateCardCollectionGallery(jsonElements){ //listar en GALLERY
                 <div class="card-description ">
                     <div class="cont-3-images">
                         <div class="content-shape-diamond">
-                            <div class="cont-circular-img-collection item1-show"> <img src="${element.ruta_img_item1}" ></div>
+                            <div class="cont-circular-img-collection item1-show"> <img src="${img_item1}" ></div>
                         </div>
                         <div class="content-shape-diamond">
-                            <div class="cont-circular-img-collection item2-show"> <img src="${element.ruta_img_item2}" ></div>
+                            <div class="cont-circular-img-collection item2-show"> <img src="${img_item2}" ></div>
                         </div>
                         <div class="content-shape-diamond diamond3">
-                            <div class="cont-circular-img-collection item3-show"> <img src="${element.ruta_img_item3}" ></div>
+                            <div class="cont-circular-img-collection item3-show"> <img src="${img_item3}" ></div>
                         </div>	
                                                                     
                     </div>
