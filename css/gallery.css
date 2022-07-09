@@ -34,12 +34,15 @@
   .grid-list{
     justify-items: center;
   }
-  .div-content-card-collection{
+  .div-content-card-collection {
     border-radius: 6px;
     border: 1px solid #073f61;
     border: 1px solid #ffffff21;
     overflow: hidden;
-  }
+    background: #191e2e;
+    min-height: 450px !important;
+    max-height: 450px;
+}
   
   a:hover{
     text-decoration: none;    

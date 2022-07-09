@@ -90,6 +90,37 @@ function addEditElements(){
           //location.reload();
     });        
 }
+function editElements(){  
+    //////////EDITAR PRODUCTOS- cargar datos en el formulario
+    $(document).on('click', ".item-collection", function(){         
+      let  element = $(this)[0];
+      let id = $(element).attr("taskId");
+       console.log(element +" "+id);     
+       //primero obtenemos los datos del elemtno clickeado                 
+       
+       $.post('backend/item-collections-select-single.php', {id}, function(response){
+            edit = true;
+            //console.log("Edit Elements "+ response);
+            const task  = JSON.parse(response);  
+            console.log(task.id_item_collection)        
+            //alert(auxNewfecha) ;
+            //const task  = response;
+            //entregamos los datos a las etiquetas
+            $(".card-img-top").attr("src",task.ruta_img_item);      
+            $('#id-image').val("");
+            //alert(task.pin);
+            //$('#ruta_img_portada').val(task.ruta_img_portada);                     
+            $('#id-ruta-img-item').val(task.ruta_img_item);      
+            $('#id-select-collection').val(task.id_item_coleccion);                       
+            $('#name-item').val(task.nombre_item);            
+            $('#collection-owner').val(task.coleccion_pertenece);
+            $('#price').val(task.precio);                          
+            //$('#').checked =(task.estado_cuenta);           
+            $('#taskId').val(task.id);                                  
+       })         
+     
+    });
+}
 function searchListCollectionSelect(){
     $('#id-input-search-collections').keyup(function() 
     {              
@@ -152,36 +183,6 @@ function ListCollectionsSelect(){
         });          
       }
     });
-}
-function editElements(){  
-    //////////EDITAR PRODUCTOS- cargar datos en el formulario
-    $(document).on('click', ".item-collection", function(){         
-      let  element = $(this)[0];
-      let id = $(element).attr("taskId");
-       console.log(element +" "+id);     
-       //primero obtenemos los datos del elemtno clickeado                 
-       
-       $.post('backend/item-collections-select-single.php', {id}, function(response){
-            edit = true;
-            //console.log("Edit Elements "+ response);
-            const task  = JSON.parse(response);          
-            //alert(auxNewfecha) ;
-            //const task  = response;
-            //entregamos los datos a las etiquetas
-            $(".card-img-top").attr("src",task.ruta_img_item);      
-            $('#id-image').val("");
-            //alert(task.pin);
-            //$('#ruta_img_portada').val(task.ruta_img_portada);                     
-            $('#id-ruta-img-item').val(task.ruta_img_item);      
-            $('#id-select-collection').val(task.id_usuario);                       
-            $('#name-item').val(task.nombre_item);            
-            $('#collection-owner').val(task.coleccion_pertenece);
-            $('#price').val(task.precio);                          
-            //$('#').checked =(task.estado_cuenta);           
-            $('#taskId').val(task.id);                                  
-       })         
-     
-  });
 }
 function deleteElements(){   
     $(document).on('click', ".btn-item-collection-delete", function(event){

@@ -3,6 +3,7 @@
  var ruta_carpeta_colecciones = "imgs/collections/";
  var ruta_img_portada_defecto = "imgs/collections/place-holder-portada.png";
 
+
  $(".form-control-file").on("change", () => {
   crearFotoDerecho();
 

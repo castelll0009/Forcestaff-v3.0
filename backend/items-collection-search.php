@@ -5,6 +5,8 @@
 
     if(!empty($search)){
         $query = "SELECT * FROM tbl_item_coleccion WHERE nombre_item LIKE '$search%'
+        UNION 
+        SELECT * FROM tbl_item_coleccion WHERE coleccion_pertenece LIKE '$search%'
         ";
         $result  = mysqli_query($connection, $query);
         if(!$result){
