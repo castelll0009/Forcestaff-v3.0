@@ -265,6 +265,6 @@ function getTemplateCardCollectionGallery(jsonElements){ //listar en GALLERY
 }
 function gotoEditItemCollection(){
     $(document).on('click', ".trigger-gotoEditItemCollection", function(){ 
-        window.open("http://forcestaff-v3.0.test/admin-items-collections.html"); //nueva pentaña
+        window.open("http://www.forcestaff.art/admin-items-collections.html"); //nueva pentaña
     });
 }
