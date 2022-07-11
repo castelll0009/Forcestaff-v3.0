@@ -136,7 +136,7 @@ function deleteElements(){
 }
 //FUNCION QUE CREA LA PLANTILLA HTML APARTIR DE LOS DATOS
 function getTemplateCardCollection(jsonElements){
-    let template= "";   
+    let template= "";       
     let  ruta_item_defecto = "imgs/collections/placeholder-items.png";
     jsonElements.forEach(element => {
         if(element.ruta_img_item1 == null){

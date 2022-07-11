@@ -203,7 +203,7 @@ function deleteElements(){
 function getTemplateCardItemsCollection(jsonElements){
     let template= "";   
     jsonElements.forEach(element => {
-        
+        //get element  id  to search the last 3 imgs of that each  item         
         //let hrefStreaming = getHrefStreaming(product);
         template += `
         <li  taskId="${element.id}" class="grid-item center item-collection card ">
