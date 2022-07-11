@@ -28,30 +28,23 @@ ORDER BY tbl_coleccion.id DESC
 ";
 */
 $query="SELECT DISTINCT tbl_coleccion.id AS currentID, tbl_coleccion.ruta_img_portada AS ruta_img_portada, tbl_coleccion.nombre_coleccion AS nombre_coleccion, tbl_coleccion.autor AS autor, tbl_coleccion.link_autor AS link_autor, tbl_coleccion.descripcion AS descripcion,
-  (SELECT DISTINCT MAX(tbl_item_coleccion.ruta_img_item)
+(SELECT DISTINCT tbl_item_coleccion.ruta_img_item
   FROM tbl_item_coleccion, tbl_coleccion
-  WHERE  tbl_coleccion.id = tbl_item_coleccion.id_item_coleccion AND tbl_coleccion.id = currentID  
+  WHERE  tbl_coleccion.id = tbl_item_coleccion.id_item_coleccion AND tbl_coleccion.id =currentID
   ORDER BY tbl_item_coleccion.id DESC
-  LIMIT 1) AS ruta_img_item1,
+  LIMIT 1)AS ruta_img_item1,
   
   (SELECT DISTINCT tbl_item_coleccion.ruta_img_item
   FROM tbl_item_coleccion, tbl_coleccion
-  WHERE  tbl_coleccion.id = tbl_item_coleccion.id_item_coleccion AND tbl_coleccion.id = currentID 
-  ORDER BY tbl_item_coleccion.id < (SELECT  MAX(tabla1.iditem) AS id_maxitem
-									FROM ( (SELECT tbl_item_coleccion.nombre_item, tbl_item_coleccion.ruta_img_item, tbl_item_coleccion.id 									   AS iditem, tbl_coleccion.id as idcol
-        							FROM tbl_item_coleccion, tbl_coleccion) AS tabla1)) DESC
-  LIMIT 1) AS ruta_img_item2,
+  WHERE  tbl_coleccion.id = tbl_item_coleccion.id_item_coleccion AND tbl_coleccion.id =currentID
+  ORDER BY tbl_item_coleccion.id DESC
+  LIMIT 1,1) AS ruta_img_item2,
   
   (SELECT DISTINCT tbl_item_coleccion.ruta_img_item
   FROM tbl_item_coleccion, tbl_coleccion
-  WHERE  tbl_coleccion.id = tbl_item_coleccion.id_item_coleccion AND tbl_coleccion.id = currentID 
-  ORDER BY tbl_item_coleccion.id < (SELECT  MAX(tabla1.iditem) AS id_maxitem
-									FROM ( (SELECT tbl_item_coleccion.nombre_item, tbl_item_coleccion.ruta_img_item, tbl_item_coleccion.id 									   AS iditem, tbl_coleccion.id as idcol
-        							FROM tbl_item_coleccion, tbl_coleccion
-                                    WHERE tbl_item_coleccion.id < (SELECT  MAX(tabla1.iditem) AS id_maxitem
-									FROM ( (SELECT tbl_item_coleccion.nombre_item, tbl_item_coleccion.ruta_img_item, tbl_item_coleccion.id 									   AS iditem, tbl_coleccion.id as idcol
-        							FROM tbl_item_coleccion, tbl_coleccion) AS tabla1)) ) AS tabla1)) DESC
-  LIMIT 1) AS ruta_img_item3
+  WHERE  tbl_coleccion.id = tbl_item_coleccion.id_item_coleccion AND tbl_coleccion.id =currentID
+  ORDER BY tbl_item_coleccion.id DESC
+  LIMIT 2,1) ruta_img_item3
   
 FROM tbl_coleccion, tbl_item_coleccion
 ORDER BY tbl_coleccion.id DESC
