@@ -1,6 +1,15 @@
 .cont-btnbuy-opciones{
   
 }
+.cont-img-portada img{
+position: fixed;
+display: block;
+width: 100%;
+}
+.section-portada{
+    position: relative;
+    
+}
 .div1-main{
     min-height: 10vh;
     max-height: 100vh;
@@ -126,13 +135,24 @@ h3{
 .link-portada:hover{ 
     color: white;    
 } 
-
+    
+@media only screen and (max-width: 800px)
+{
+    .section-portada{
+        padding-top: 50% !important;           
+        padding-bottom: 100% ;  
+    }
+}
     
 @media only screen and (max-width: 1200px)
 {
+    .section-portada{
+        padding-top: 50% !important;           
+        padding-bottom: 100% ;  
+    }
     .item1{
         min-width: auto;
-        max-width: 350px;        
+        max-width:500px;       
     }
 
     .item2{    

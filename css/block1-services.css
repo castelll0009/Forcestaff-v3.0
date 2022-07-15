@@ -62,13 +62,6 @@
 
 }
 .info-card{    
-    /*
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #a0a0a0;
-    */
-
     position: relative;
     display: -webkit-flex;
     display: flex;
@@ -76,6 +69,7 @@
     flex-direction: row;
     -webkit-align-items: center;
     align-items: center;
+    line-height: 1em;
     -webkit-flex: 2 1;
     flex: 2 1;
     padding-left: 15px;
@@ -110,9 +104,12 @@
     font-size: 15px;
 }
 .hire-card:hover{  
+    transition: all 0.5s;
     background: linear-gradient(to right,#00CCFF 40%, #6E4D95 80%, #AF5CC9 100%);
+    background: linear-gradient(to right,#00CCFF 10%, #6E4D95 80%, #AF5CC9 100%);
     text-decoration: none;
     color:rgb(255, 255, 255);
+  
   }
 
 .test-card{

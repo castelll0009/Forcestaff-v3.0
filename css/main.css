@@ -95,10 +95,18 @@ main section{
     bottom: 0;
     background-repeat: no-repeat;
     z-index: 0;        
-    background-image: url(../imgs/portada.png);     
+    /*background-image: url(../imgs/portada.png);     */
         
 }
-
+/*Video*/
+.cont-video-team {
+    position: relative;
+    width: 100%;
+}
+.cont-video-team source{    
+    width: 100%;
+    
+}
 h2{
     font-size: 26px;
     line-height: 36px;
