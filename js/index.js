@@ -1,4 +1,6 @@
-var estate_video = "play";
+var estate_video = "pause";
+
+
 $('#cont-video-team').click(function(){   
     if(estate_video =="play")    {
         $('.cont-video-team')[0].pause();

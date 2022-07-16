@@ -142,6 +142,10 @@ h3{
         padding-top: 50% !important;           
         padding-bottom: 100% ;  
     }
+    .section-card-services ul{
+        grid-template-columns: 1fr ;
+    }
+
 }
     
 @media only screen and (max-width: 1200px)
