@@ -144,6 +144,8 @@ h3{
     }
     .section-card-services ul{
         grid-template-columns: 1fr ;
+        display: flex;
+        align-items: center;
     }
 
 }
