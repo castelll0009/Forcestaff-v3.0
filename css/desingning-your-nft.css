@@ -19,11 +19,19 @@ main {
 }
 
 .picture-img-section img {    
+    opacity: 0.8;
+}
 
+.picture-img-section img:hover{    
+    opacity:1;
 }
 @media only screen and (max-width: 800px){
     .text-introduction{
         font-size: 10vw !important;
     }
+    main{
+        font-size: 16px;
+    }
+
     
 }

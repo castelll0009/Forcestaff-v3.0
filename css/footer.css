@@ -63,8 +63,8 @@ margin-right: -40px;
 }
 .globe img{   
       max-width: 2%;    
-      margin-top: -4px;       
-   
+      margin-top: -4px;  
+      filter: invert(1);   
 }
 
 footer a.link {
