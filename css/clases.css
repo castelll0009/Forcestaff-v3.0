@@ -266,6 +266,7 @@ organizar elementos*/
   justify-content: center;
   margin: 0 -12px;
   padding-left: 0;
+  justify-items: center;
   align-items: flex-start;
 }
 .grid-list-normal{  
