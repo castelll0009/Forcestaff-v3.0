@@ -60,11 +60,17 @@ main section{
 }
 
 /*desing your NFT*/
-.ul-desgning-nft{}
+.ul-desgning-nft{
+    text-align: -webkit-center;
+}
 .ul-desgning-nft li{
-    list-style: circle;
-    list-style-position: inside;
+    list-style: square;
+    list-style: none;
     text-align: center;
+    width: fit-content;
+    list-style-position: inherit;
+    text-align: center;
+    border-bottom: solid 1px #ffffff24;
 }
 
 .smallbar{

@@ -1,0 +1,29 @@
+main {
+    font-size: 1.5em;
+    overflow: hidden;
+}
+.btn-secondary{
+    background: #12477a;
+}
+
+.padding-titulo-pestanas{
+    padding-top: 8vh;
+}
+.blocks{
+    justify-content: space-around;
+}
+.text-container h2 {
+    font-size: 3em;
+    padding-bottom: 30px;
+    line-height: 100%;
+}
+
+.picture-img-section img {    
+
+}
+@media only screen and (max-width: 800px){
+    .text-introduction{
+        font-size: 10vw !important;
+    }
+    
+}
