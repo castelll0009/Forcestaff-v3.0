@@ -191,35 +191,33 @@
 			</section>
 						
 			<div class="content">
-
-				<h1 class="logo">Contact <span>Us</span></h1>
-		
+				<h1 class="logo">Contact <span>Us</span></h1>		
 				<div class="contact-wrapper animated bounceInUp">
 					<div class="contact-form">						
-						<form action="">
+						<form action="" method="POST">
 							<p>
 								<label>FullName</label>
-								<input type="text" name="fullname">
+								<input required id="id-fullname" type="text" name="fullname">
 							</p>
 							<p>
 								<label>Email Adress</label>
-								<input type="email" name="email">
+								<input required id="id-email" type="email" name="email">
 							</p>
 							<p>
 								<label>Phone Number</label>
-								<input type="tel" name="phone">
+								<input required id="id-phone"  type="number" name="phone">
 							</p>
 							<p>
 								<label>Affair</label>
-								<input type="text" value="NFT design creative" name="affair">
+								<input required id="id-affair" type="text" value="NFT design creative" name="affair">
 							</p>
 							<p class="block">
 							   <label>Message</label> 
-								<textarea name="message" rows="3">I am interested in contracting the NFT service designing Creations
+								<textarea id="id-message" name="message" rows="3">I am interested in contracting the NFT service designing Creations
 								</textarea>
 							</p>
 							<p class="block">
-								<button class="btn-secondary hvr-bounce-to-right">
+								<button type="submit" name="send" class="btn-secondary hvr-bounce-to-right">
 									Send
 								</button>
 							</p>
@@ -236,8 +234,7 @@
 						<p>www.forcestaff.art</p>
 					</div>
 				</div>
-				
-		
+
 			</div>
 		</main>
 
@@ -274,7 +271,8 @@
 					</p>
 		</footer>
 				
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.1/dist/html2canvas.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.1/dist/html2canvas.min.js"></script>	
+	<script src="js/enviar_correos_clientes.js"></script>
 	<script src="js/index.js"></script>
 	<!--<script src="js/captura-pantalla.js"></script>-->
 	<script src="js/jquery.js"></script>			
