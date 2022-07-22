@@ -17,6 +17,9 @@
 		<link rel="stylesheet" href="css/clases.css">
 		<link rel="stylesheet" href="css/navbar.css">
 		<link rel="stylesheet" href="css/main-btn-arrow-down.css">	
+
+		<!--Telefonos paises-->
+		
 	
 		<!--css-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -194,7 +197,7 @@
 				<h1 class="logo">Contact <span>Us</span></h1>		
 				<div class="contact-wrapper animated bounceInUp">
 					<div class="contact-form">						
-						<form action="" method="POST">
+						<form id="id-form-contact-us" action="" method="POST">
 							<p>
 								<label>FullName</label>
 								<input required id="id-fullname" type="text" name="fullname">
@@ -203,7 +206,7 @@
 								<label>Email Adress</label>
 								<input required id="id-email" type="email" name="email">
 							</p>
-							<p>
+							<p>																							 
 								<label>Phone Number</label>
 								<input required id="id-phone"  type="number" name="phone">
 							</p>
@@ -216,9 +219,11 @@
 								<textarea id="id-message" name="message" rows="3">I am interested in contracting the NFT service designing Creations
 								</textarea>
 							</p>
-							<p class="block">
-								<button type="submit" name="send" class="btn-secondary hvr-bounce-to-right">
+							<p class="block">																												
+								
+								<button id="id-send" type="submit"  name="send" class="btn-secondary hvr-bounce-to-right">
 									Send
+									
 								</button>
 							</p>
 						</form>
@@ -270,7 +275,7 @@
 						ForceStaff es una plataforma de servicios por suscripción de pago o contrato, su contenido está sujeto a disponibilidad.  ForceStaff Colombia S.A, Carrera 50 No. 17 – 77 Bogotá D.C. y número de NIT es 804.116.937-1
 					</p>
 		</footer>
-				
+						
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.1/dist/html2canvas.min.js"></script>	
 	<script src="js/enviar_correos_clientes.js"></script>
 	<script src="js/index.js"></script>
