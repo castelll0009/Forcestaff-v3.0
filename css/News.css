@@ -22,3 +22,9 @@ body{
     width: 100%;
     position: relative;
 }
+.list-group-item a{
+    color:  silver;
+}
+.list-group-item a:hover{
+    color:  white;
+}
