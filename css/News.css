@@ -1,0 +1,19 @@
+.text_title-nav-news{
+    font-family: Industry,"sans-serif";
+    font-weight: 350;
+    line-height: 38px;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    color: #fff;
+}
+.secondary_content_nav{
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
