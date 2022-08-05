@@ -22,9 +22,20 @@ body{
     width: 100%;
     position: relative;
 }
+.list-group-item{
+    margin: -1px;
+}
+.list-group-item:hover{
+    margin: -1px;
+    color: white;
+}
 .list-group-item a{
     color:  silver;
 }
 .list-group-item a:hover{
     color:  white;
+}
+
+.ul-news .list-group-item{    
+    border-bottom: 3px solid #c0c0c0b8;
 }
