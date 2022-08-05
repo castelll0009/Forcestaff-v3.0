@@ -25,9 +25,9 @@ body{
 .list-group-item{
     margin: -1px;
 }
-.list-group-item:hover{
-    margin: -1px;
-    color: white;
+.ul-news .list-group-item:hover{
+    border-bottom: 3px solid #ffffffb8;
+    
 }
 .list-group-item a{
     color:  silver;
