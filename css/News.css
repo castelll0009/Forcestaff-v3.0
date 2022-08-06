@@ -73,3 +73,115 @@ body{
     transition: background 2s ease;   
     opacity: 0;    
 }
+
+/*Grid items */
+.grid-container {
+    display: grid;  
+    grid-template-columns: repeat(4,1fr);              
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+    margin-top: 50px;
+  }
+  
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    /* padding: 20px 0; */
+    font-size: 30px;
+  }
+  /* .grid-item1{
+  grid-column: span 3;
+  } */
+
+.featured-article-large_image__1UlCx {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.featured-article-large_article_large__16uVP {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
+.featured-article-large_categories__2VJCW {
+    margin-bottom: 5px;
+}
+
+.small-module.jsx-4117428422 {
+    font-family: Industry, sans-serif;
+    font-weight: 350;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+body.jsx-2061130790 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(180, 180, 180);
+}
+
+.featured-article-large_excerpt__lD9zf {
+    display: none;
+}
+.body.jsx-2061130790 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(180, 180, 180);
+}
+@media screen and (min-width: 1520px){
+    .news-page_featured__1vO4J {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+}
+
+ @media screen and (min-width: 992px){
+
+
+    .featured-article-large_article_large__16uVP {
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: minmax(400px,auto);
+        grid-column-gap: 32px;
+        background-color: rgba(0,0,0,.5);
+    }
+   
+    
+    .featured-article-large_image_container__1KzzQ {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .featured-article-large_content__NN5Ns {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        padding: 32px 32px 32px 0;
+    }   
+    .medium-module-subtitle.jsx-2180848241 {
+        font-family: "Normative Pro", "Segoe UI", Arial, sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: rgb(180, 180, 180);
+    }
+    .featured-article-large_excerpt__lD9zf {
+    display: block;
+    }
+}
+    
+
+@media screen and (min-width: 768px){
+    .featured-article-large_meta__13z2E {
+        margin: 20px auto 32px;
+    }
+}
