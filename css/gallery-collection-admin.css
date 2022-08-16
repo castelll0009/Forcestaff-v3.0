@@ -1,3 +1,11 @@
+/* header  nav search */
+.nav-container ul li .form-search-collection:hover, .nav-container ul li .form-search-collection:visited:hover{
+    box-shadow: none;
+    background: none;
+}
+
+
+
 .grid-list{
     
     justify-content: center;
@@ -128,8 +136,57 @@
     transform: scale(1.1);
     cursor: pointer;    
   }   
+
+  /*show form from left*/
+.show-form-from-left {
+    position: absolute !important;
+    display: block !important;
+    margin-left: 0% !important;      
+}
+  /* botones opciones */
+.botones-opciones {
+    font-size: 1em;
+    border-radius: 30%;
+    min-width: 30px;
+    text-align: center;
+    min-height: auto;
+    padding: 5px 5px 5px 5px;
+    color: #ffffff;
+    background: rgb(212 97 15 / 72%);
+    background: repeating-linear-gradient(340deg, #00acdb, #ff0808 100px);
+    bottom: 10px;
+    position: fixed;
+    right: 5px;
+    z-index: 100;
+}
+  
+
 /*1224 para abajo*/
 @media only screen and (max-width: 800px){
+ 
+    /* formulario  */
+    .form-card .col1-setting{
+        overflow-y: scroll;
+        height: 100vh;
+        max-height: 100vh;
+        display: flex;
+        min-width: 100%;
+        flex-direction: column;
+        margin-left: -0%;
+        padding: 10px;
+        position: fixed;
+        z-index: 2;
+        background: #040814;
+        border-bottom: 1px solid grey;
+        align-items: center;
+        flex-wrap: nowrap;
+        align-content: space-between;
+        margin: 0 !important;
+        top: 40px;
+        display: none;
+    }
+       
+
     .sidealing p h1 {
         line-height: 1px;
     }    

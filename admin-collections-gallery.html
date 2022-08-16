@@ -47,6 +47,8 @@
 				<a href="#" class="btn-wallet"><span class="span-cont-img"><img src="imgs/cart.png"></span> </a>		
 				<a href="#" class="btn-login"><span class="span-login">Log In</span></a>																	
 			</nav>
+		
+				
 
 			<nav id="post-stick" class="nav post-stick">
 				<a class="a-img-logo">	
@@ -86,14 +88,21 @@
 						</li>
 						<li>
 						<a href="#!">Contact</a>
-						</li>					
+						</li>	
+						<li class="li-search" >
+							<a class="form-search-collection form-inline d-flex flex-nowrap my-lg-0" style=" z-index:2;">
+								<input  name="search" id="search" class=" form-control mr-2 mr-sm-2" type="search" placeholder="Search collection" aria-label="Search">
+								<button class="btn  my-2 my-sm-0" style="background-color: rgb(0, 183, 255);" type="submit">Buscar</button>
+							</a>
+						</li>				
 					</ul>
 										
 				
 					 			
 				</nav>
 
-				
+			
+
 				<a href="#" class="btn-wallet"><span class="span-cont-img"><img src="imgs/cart.png"></span></a>		
 				<a href="#" class="btn-login"><span class="span-login">Log In</span></a>		
 				<div class="nav-mobile"><a id="navbar-toggle" href="#!"><span></span></a></div>
@@ -101,13 +110,12 @@
 					  																			
 		</header>				
 
-		<main style="text-align: center;">			
+		<main style="text-align: center;">
+			<span class="cont-menu-opciones">
+				<i id="btn-carta" onclick="showForm();" class="botones-opciones fas fa-list-ul"></i>
+			</span>
 			<div  class="sidealing blocks" style="flex-direction: column;">
 		
-				<form class="form-search-collection form-inline my-2 my-lg-0" style="position: fixed; z-index:2;">
-					<input  name="search" id="search" class=" form-control mr-2 mr-sm-2" type="search" placeholder="Search collection" aria-label="Search">
-					<button class="btn  my-2 my-sm-0" style="background-color: rgb(0, 183, 255);" type="submit">Buscar</button>
-				</form>	
 
 				<h1 class="title-gallery">Admin Collections </h1>
 				<p class="description-collections large">Here you can create, udpdate and  delete the collection of gallery of  forcestaff.</p>	
@@ -116,7 +124,7 @@
 				<div class="container">				
 						<div class=" form-card flexbox-container">
 
-						  <div class="card-body col1-setting">                                      									   
+						  <div class="card-body col1-setting" class="position: absolute; margin-left: -100%;">                                      									   
 							<form  method="post" action="#" enctype="multipart/form-data">
 							  <div class="card-form "  >							
 								<div class="form-group">								
@@ -211,31 +219,7 @@
 						  </div>
 
 						</div>
-					  </div>
-			  
-					  <!-- TABLE 
-					  <div class="col-md-7">
-						<div class="card my-4" id="task-result">
-						  <div class="card-body">
-							
-							<ul id="containerTask"></ul>
-						  </div>
-						</div>
-			  
-						<table class="table table-bordered table-sm">
-						  <thead>
-							<tr>
-							  <td>Id</td>							  
-							  <td>Name collection</td>
-							  <td>Autor collection</td>
-							  <td>Description</td> 						                                                        
-							</tr>
-						  </thead>
-						  <tbody id="tasks"></tbody>
-						</table>					
-				 	 </div>
-					-->
-
+					  </div>			  
 			
 			</div>					 					
 
@@ -276,6 +260,7 @@
 					</p>
 		</footer>
 		
+	<script src="js/admin-gallery.js"></script>
 	<script src="js/app-request-forcestaff.js"></script>
 	<script src="js/collection-subir-img-form.js"></script>
 	<script src="js/jquery.js"></script>		
